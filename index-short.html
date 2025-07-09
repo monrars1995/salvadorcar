@@ -388,13 +388,159 @@
         }
         
         /* Responsividade aprimorada */
+        /* Responsividade Mobile Melhorada */
         @media (max-width: 768px) {
             .particle {
                 display: none;
             }
             
-            .enhanced-hover:hover {
-                transform: translateY(-5px) scale(1.01);
+            /* Header mobile */
+            header .container {
+                flex-direction: column !important;
+                gap: 0.5rem;
+                padding: 1rem !important;
+            }
+            
+            header .flex.items-center.space-x-4 {
+                flex-direction: column !important;
+                gap: 0.25rem;
+                text-align: center;
+            }
+            
+            header .flex.items-center.space-x-4 span {
+                font-size: 0.75rem !important;
+            }
+            
+            /* Hero section mobile */
+            .min-h-screen {
+                min-height: auto !important;
+                padding-top: 120px !important;
+            }
+            
+            .grid.lg\:grid-cols-2 {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+            
+            /* Typography mobile */
+            h1 {
+                font-size: 2rem !important;
+                line-height: 1.1 !important;
+                text-align: center;
+            }
+            
+            .text-xl.md\:text-2xl {
+                font-size: 1rem !important;
+                text-align: center;
+                padding: 0 1rem;
+            }
+            
+            /* Grid responsivo */
+            .grid.grid-cols-2.md\:grid-cols-4 {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 1rem !important;
+            }
+            
+            /* Glass cards mobile */
+            .glass-card {
+                padding: 1rem !important;
+                margin: 0.5rem !important;
+            }
+            
+            /* Botões mobile */
+            .flex.flex-col.sm\:flex-row {
+                flex-direction: column !important;
+                gap: 1rem !important;
+            }
+            
+            .btn-enhanced {
+                padding: 1rem 2rem !important;
+                font-size: 1rem !important;
+                text-align: center !important;
+            }
+            
+            /* Lead form mobile */
+            #lead-form {
+                padding: 1.5rem !important;
+                margin: 1rem !important;
+            }
+            
+            .form-group input {
+                padding: 1rem !important;
+                font-size: 1rem !important;
+            }
+            
+            .form-group button {
+                padding: 1rem !important;
+                font-size: 1rem !important;
+            }
+            
+            /* Container mobile */
+            .container {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            
+            /* Spacing mobile */
+            .space-y-6 > * + * {
+                margin-top: 1.5rem !important;
+            }
+            
+            .space-y-8 > * + * {
+                margin-top: 2rem !important;
+            }
+            
+            /* Background fixed para mobile */
+            .bg-fixed {
+                background-attachment: scroll !important;
+            }
+            
+            /* Touch targets */
+            button, a, input {
+                min-height: 44px !important;
+                min-width: 44px !important;
+            }
+            
+            /* Overflow control */
+            body {
+                overflow-x: hidden !important;
+            }
+            
+            /* Badge mobile */
+            .inline-flex.items-center {
+                padding: 0.5rem 1rem !important;
+                font-size: 0.75rem !important;
+                text-align: center;
+            }
+        }
+        
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem !important;
+            }
+            
+            .text-xl.md\:text-2xl {
+                font-size: 0.9rem !important;
+            }
+            
+            .grid.grid-cols-2 {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .glass-card {
+                padding: 0.75rem !important;
+                margin: 0.25rem !important;
+            }
+            
+            .btn-enhanced {
+                padding: 0.75rem 1.5rem !important;
+                font-size: 0.9rem !important;
+            }
+            
+            #lead-form {
+                padding: 1rem !important;
+                margin: 0.5rem !important;
             }
         }
         

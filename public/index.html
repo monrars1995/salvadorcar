@@ -398,19 +398,136 @@
             opacity: 1;
         }
         
-        /* Responsive Improvements */
+        /* Responsive Improvements - Mobile Optimized */
         @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2.5rem !important;
-                line-height: 1.2;
+            /* Header mobile */
+            header .max-w-7xl {
+                flex-direction: column !important;
+                gap: 1rem;
+                padding: 1rem !important;
+            }
+            
+            header .hidden.md\:flex {
+                display: flex !important;
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+            
+            header .hidden.md\:flex span {
+                font-size: 0.875rem !important;
+            }
+            
+            /* Hero section mobile */
+            .min-h-screen {
+                min-height: auto !important;
+                padding-top: 2rem;
+            }
+            
+            .grid.grid-cols-1.lg\:grid-cols-2 {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+            
+            .min-h-\[80vh\] {
+                min-height: auto !important;
+            }
+            
+            /* Typography mobile */
+            h1 {
+                font-size: 2rem !important;
+                line-height: 1.1 !important;
+                text-align: center;
+            }
+            
+            .text-xl.lg\:text-2xl {
+                font-size: 1rem !important;
+                text-align: center;
+                padding: 0 1rem;
+            }
+            
+            /* Glass effects mobile */
+            .glass-effect {
+                margin: 0 1rem !important;
+                padding: 1rem !important;
+            }
+            
+            /* Benefits grid mobile */
+            .grid.grid-cols-2 {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 1rem !important;
+            }
+            
+            .benefit-card {
+                padding: 1rem !important;
+            }
+            
+            .benefit-card .text-3xl {
+                font-size: 1.5rem !important;
+            }
+            
+            .benefit-card .text-sm {
+                font-size: 0.75rem !important;
+            }
+            
+            /* Spacing mobile */
+            .space-y-10 > * + * {
+                margin-top: 2rem !important;
+            }
+            
+            .pt-16 {
+                padding-top: 2rem !important;
+            }
+            
+            .pb-24 {
+                padding-bottom: 3rem !important;
+            }
+            
+            /* Container mobile */
+            .max-w-7xl {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            
+            /* Background fixed para mobile */
+            .bg-fixed {
+                background-attachment: scroll !important;
+            }
+            
+            /* Touch targets */
+            button, a, input {
+                min-height: 44px !important;
+                min-width: 44px !important;
+            }
+            
+            /* Overflow control */
+            body {
+                overflow-x: hidden !important;
+            }
+        }
+        
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem !important;
+            }
+            
+            .text-xl.lg\:text-2xl {
+                font-size: 0.9rem !important;
+            }
+            
+            .grid.grid-cols-2 {
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
             }
             
             .glass-effect {
-                margin: 0 16px;
+                padding: 0.75rem !important;
+                margin: 0 0.5rem !important;
             }
             
-            .benefit-card:hover {
-                transform: translateY(-4px) scale(1.01);
+            .benefit-card .text-3xl {
+                font-size: 1.25rem !important;
             }
         }
         
