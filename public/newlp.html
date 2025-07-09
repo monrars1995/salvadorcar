@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVO Mitsubishi Eclipse Cross 2026 - Salvador Car | O Fenômeno Para Quem Dirige</title>
+    <meta name="description" content="Descubra o NOVO Eclipse Cross 2026: Motor 1.5L Turbo 165cv, tração 4x4, multimídia 10", garantia 5 anos. Selo Os Eleitos Quatro Rodas 2024. Test-drive gratuito na Salvador Car.">
+    <meta name="keywords" content="Mitsubishi Eclipse Cross 2026, SUV premium, motor turbo 165cv, tração 4x4, Salvador Car, test-drive, financiamento, 7 airbags, garantia 5 anos, Os Eleitos Quatro Rodas">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://salvadorcar.com.br/">
+    <meta property="og:title" content="NOVO Mitsubishi Eclipse Cross 2026 - Salvador Car">
+    <meta property="og:description" content="O Fenômeno Para Quem Dirige! Motor 1.5L Turbo 165cv, tração 4x4, multimídia 10". Selo Os Eleitos Quatro Rodas 2024!">
+    <meta property="og:image" content="https://salvadorcar.com.br/8197.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://salvadorcar.com.br/">
+    <meta property="twitter:title" content="NOVO Mitsubishi Eclipse Cross 2026 - Salvador Car">
+    <meta property="twitter:description" content="O Fenômeno Para Quem Dirige! Motor 1.5L Turbo 165cv, tração 4x4, multimídia 10". Selo Os Eleitos Quatro Rodas 2024!">
+    <meta property="twitter:image" content="https://salvadorcar.com.br/8197.png">
+
+    <link rel="canonical" href="https://salvadorcar.com.br/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --mitsubishi-red: #e60012;
+            --mitsubishi-red-dark: #cc0010;
+            --background-dark: #121212;
+            --background-light: #1f1f1f;
+            --text-primary: #ffffff;
+            --text-secondary: #a0aec0;
+            --text-muted: #718096;
+            --glass-bg: rgba(31, 31, 31, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            overflow-x: hidden;
+            background-color: var(--background-dark);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Page Loading Animation */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .page-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(230, 0, 18, 0.3);
+            border-top: 3px solid var(--mitsubishi-red);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Fixed Navigation */
+        .fixed-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(18, 18, 18, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .fixed-nav.visible {
+            transform: translateY(0);
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+        }
+
+        .nav-logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-cta {
+            background: var(--mitsubishi-red);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background: var(--mitsubishi-red-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: var(--mitsubishi-red);
+            z-index: 1001;
+            transition: width 0.3s ease;
+        }
+
+        /* Background and Gradients */
+        .dark-bg { background-color: var(--background-dark); }
+        .light-bg { background-color: var(--background-light); }
+        
+        .hero-gradient {
+            background: linear-gradient(to top, rgba(18,18,18,1) 0%, rgba(18,18,18,0.3) 100%);
+        }
+        
+        .glass-effect {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+        }
+
+        .highlight-red { color: var(--mitsubishi-red); }
+        .highlight-red-bg { background-color: var(--mitsubishi-red); }
+
+        /* Animations */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        .pulse-red { animation: pulse 2s ease-in-out infinite; }
+        .will-change-transform { will-change: transform; }
+
+        /* Enhanced Form Styles */
+        .form-input {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+        
+        .form-input::placeholder { color: var(--text-secondary); }
+        
+        .form-input:focus {
+            border-color: var(--mitsubishi-red);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(230, 0, 18, 0.2);
+        }
+
+        /* Enhanced Buttons */
+        .btn { padding: 16px 32px; border-radius: 8px; font-weight: 700; font-size: 16px; cursor: pointer; transition: all 0.3s ease; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
+        .btn-primary { background: var(--mitsubishi-red); color: white; border: none; }
+        .btn-primary:hover { background: var(--mitsubishi-red-dark); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(230, 0, 18, 0.3); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid var(--mitsubishi-red); }
+        .btn-secondary:hover { background: var(--mitsubishi-red); color: white; transform: translateY(-3px); }
+
+        /* Section Spacing */
+        section { padding: 6rem 1.5rem; }
+
+        /* Card Hover Effect */
+        .feature-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; }
+        .feature-card:hover { transform: translateY(-10px) scale(1.03); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }
+
+        /* WhatsApp Button */
+        .whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 1000; animation: bounce 2.5s infinite; }
+        .whatsapp-btn { width: 64px; height: 64px; background: linear-gradient(135deg, #25d366, #128c7e); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3); transition: all 0.3s ease; }
+        .whatsapp-btn:hover { transform: scale(1.1); box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4); }
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 60% { transform: translateY(-5px); } }
+
+        /* Responsive Improvements */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.25rem !important; }
+            h2 { font-size: 2rem !important; }
+            section { padding: 4rem 1rem; }
+            .grid { grid-template-columns: 1fr !important; }
+            .hero-content { text-align: center; }
+        }
+
+        /* Reduced Motion Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+          .floating-animation, .pulse-red, .bounce, .feature-card { animation: none; transition: none; }
+          .feature-card:hover { transform: none; }
+        }
+    </style>
+</head>
+<body class="dark-bg">
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="text-white text-lg font-semibold">Carregando experiência...</p>
+        </div>
+    </div>
+    
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <!-- Fixed Navigation -->
+    <nav class="fixed-nav" id="fixedNav">
+        <div class="nav-content">
+            <img src="https://logoeps.com/wp-content/uploads/2013/03/mitsubishi-vector-logo.png" alt="Mitsubishi" class="nav-logo">
+            <a href="#contact-form" class="nav-cta hidden md:flex">Quero uma Proposta</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-screen relative flex items-center" style="padding-top: 0; padding-bottom: 0;">
+            <div class="absolute inset-0 bg-cover bg-center bg-fixed" style="background-image: url('bgcar.webp');"></div>
+            <div class="absolute inset-0 hero-gradient"></div>
+            <header class="absolute top-0 left-0 right-0 z-10 p-6">
+                <div class="max-w-7xl mx-auto flex items-center justify-center">
+                    <img src="logo_webp_comprar-salvador-car_f135245f55.png.webp" alt="Salvador Car" class="h-12 w-auto">
+                </div>
+            </header>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8 hero-content animate-fade-in">
+                    <!-- Selo Os Eleitos -->
+                    <div class="inline-flex items-center bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-bold mb-4">
+                        <i class="fas fa-trophy mr-2"></i>
+                        SELO OS ELEITOS QUATRO RODAS 2024
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white drop-shadow-xl">
+                        NOVO Eclipse Cross 2026<br>
+                        <span class="highlight-red">UM FENÔMENO PARA QUEM DIRIGE</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-text-secondary max-w-xl mx-auto lg:mx-0">
+                        Redescubra o prazer de dirigir com <span class="font-bold text-white">tração 4x4, motor 1.5L Turbo de 165cv</span> e tecnologia que cuida dos detalhes. Do asfalto à estrada de terra, uma experiência única ao volante.
+                    </p>
+                    <div class="pt-4">
+                        <a href="#contact-form" class="btn btn-primary pulse-red text-lg">
+                            <i class="fas fa-car mr-3"></i>
+                            AGENDAR MEU TEST-DRIVE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Numbers & Social Proof Section -->
+        <section id="key-numbers" class="light-bg">
+            <div class="max-w-7xl mx-auto text-center">
+                <div class="flex items-center justify-center space-x-4 mb-12 animate-fade-in">
+                    <div class="flex text-yellow-400 text-2xl"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    <span class="text-white font-bold text-lg">4.9/5 Estrelas</span>
+                    <span class="text-text-secondary font-medium">|</span>
+                    <span class="text-text-secondary font-medium"><i class="fas fa-users mr-2"></i>+2.847 Clientes Satisfeitos</span>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="glass-effect rounded-xl p-6 feature-card" role="article">
+                        <div class="text-4xl font-bold highlight-red mb-2">165 CV</div>
+                        <div class="text-md text-text-secondary font-semibold">Motor 1.5L Turbo MIVEC</div>
+                    </div>
+                    <div class="glass-effect rounded-xl p-6 feature-card" role="article">
+                        <div class="text-4xl font-bold highlight-red mb-2">5,3m</div>
+                        <div class="text-md text-text-secondary font-semibold">Menor Raio de Giro</div>
+                    </div>
+                    <div class="glass-effect rounded-xl p-6 feature-card" role="article">
+                        <div class="text-4xl font-bold highlight-red mb-2">7 Airbags</div>
+                        <div class="text-md text-text-secondary font-semibold">Segurança Máxima</div>
+                    </div>
+                    <div class="glass-effect rounded-xl p-6 feature-card" role="article">
+                        <div class="text-4xl font-bold highlight-red mb-2">5 Anos</div>
+                        <div class="text-md text-text-secondary font-semibold">Garantia de Fábrica</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Versões e Preços Section -->
+        <section class="dark-bg">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl lg:text-5xl font-black text-white mb-4">Versões <span class="highlight-red">Eclipse Cross 2026</span></h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto">Confira todas as versões e garanta já o seu próximo Mitsubishi 0km!</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Eclipse Cross RUSH -->
+                    <div class="glass-effect rounded-xl p-8 feature-card border-2 border-red-500">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Eclipse Cross RUSH</h3>
+                            <div class="text-sm text-text-secondary line-through mb-1">DE R$ 173.990,00</div>
+                            <div class="text-3xl font-bold highlight-red mb-2">R$ 169.990,00</div>
+                            <div class="text-sm text-yellow-400 font-semibold">MIT PCD: R$ 149.990,00</div>
+                        </div>
+                        <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Motor MIVEC 1.5L Turbo 165cv</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Tração 4X2 Dianteira</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>7 airbags</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Multimídia 10" Apple CarPlay</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Câmbio CVT Sport Mode</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>5 anos de garantia</li>
+                        </ul>
+                        <a href="#contact-form" class="btn btn-primary w-full">SOLICITAR COTAÇÃO</a>
+                    </div>
+
+                    <!-- Eclipse Cross HPE BLACK -->
+                    <div class="glass-effect rounded-xl p-8 feature-card border-2 border-yellow-500 relative">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black px-4 py-1 rounded-full text-xs font-bold">
+                            MAIS VENDIDA
+                        </div>
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Eclipse Cross HPE BLACK</h3>
+                            <div class="text-3xl font-bold highlight-red mb-2">A partir de R$ 192.990,00</div>
+                            <div class="text-sm text-yellow-400 font-semibold">MIT PCD: R$ 169.990,00</div>
+                        </div>
+                        <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Todos os itens da RUSH +</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Acabamento Premium Black</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Bancos em couro</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Rodas 18" cinza metalizado</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Supervalorização até R$ 10.000</li>
+                        </ul>
+                        <a href="#contact-form" class="btn btn-primary w-full">SOLICITAR COTAÇÃO</a>
+                    </div>
+
+                    <!-- Eclipse Cross HPE-S BLACK 4x4 -->
+                    <div class="glass-effect rounded-xl p-8 feature-card border-2 border-red-500">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Eclipse Cross HPE-S BLACK 4x4</h3>
+                            <div class="text-3xl font-bold highlight-red mb-2">A partir de R$ 225.990,00</div>
+                            <div class="text-sm text-yellow-400 font-semibold">TOPO DE LINHA</div>
+                        </div>
+                        <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Todos os itens da HPE BLACK +</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i><strong>Tração 4x4 Integral</strong></li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Suspensão Multi-link</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Controle de Estabilidade ASC</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Assistente de Rampa HSA</li>
+                        </ul>
+                        <a href="#contact-form" class="btn btn-primary w-full">SOLICITAR COTAÇÃO</a>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <p class="text-text-secondary text-sm mb-4">*Eclipse HPE E HPE BLACK - Supervalorização de até R$ 10.000,00 no seminovo (Exceto para ofertas MIT PCD)</p>
+                    <a href="#contact-form" class="btn btn-secondary">
+                        <i class="fas fa-calculator mr-3"></i>SIMULAR FINANCIAMENTO
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Lead Form Section -->
+        <section id="contact-form" class="dark-bg">
+            <div class="max-w-4xl mx-auto">
+                 <div id="form-container" class="glass-effect rounded-2xl p-8 lg:p-12 border border-red-500 shadow-2xl">
+                    <div class="text-center mb-8">
+                        <div class="w-20 h-20 highlight-red-bg rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i class="fas fa-gift text-white text-3xl"></i>
+                        </div>
+                        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-2">
+                            Receba Uma Proposta VIP
+                        </h2>
+                        <p class="text-text-secondary text-lg">Preencha o formulário e garanta condições exclusivas.</p>
+                    </div>
+                    <form id="leadForm" class="space-y-6">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu nome completo" class="w-full px-5 py-4 rounded-lg form-input text-lg" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" class="w-full px-5 py-4 rounded-lg form-input text-lg" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Seu WhatsApp (com DDD)" class="w-full px-5 py-4 rounded-lg form-input text-lg" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="interest" name="interest" class="w-full px-5 py-4 rounded-lg form-input text-lg" required>
+                                <option value="" disabled selected>Qual seu principal interesse?</option>
+                                <option value="test-drive">Agendar um test-drive</option>
+                                <option value="proposta">Receber proposta completa</option>
+                                <option value="financiamento">Simular financiamento</option>
+                                <option value="troca">Avaliar meu carro na troca</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="submitBtn" class="w-full btn btn-primary text-lg py-5 rounded-lg shadow-lg">
+                            <span id="btn-text">RECEBER PROPOSTA VIP</span>
+                            <div id="btn-loader" class="loader-spinner" style="display: none; width: 24px; height: 24px; border-width: 2px; margin: 0;"></div>
+                        </button>
+                    </form>
+                    <div class="text-center mt-6">
+                        <p class="text-sm text-text-secondary">
+                            <i class="fas fa-shield-alt mr-2 text-green-400"></i>
+                            Seus dados estão 100% seguros conosco.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Success Message -->
+                 <div id="success-message" class="glass-effect rounded-2xl p-8 lg:p-12 text-center" style="display: none;">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-check text-white text-4xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-white mb-4">Solicitação Enviada!</h2>
+                    <p class="text-lg text-text-secondary mb-8">Obrigado, <span id="success-name" class="font-bold text-white"></span>! Um de nossos consultores entrará em contato com você em breve.</p>
+                    <a id="whatsapp-redirect-btn" href="#" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp mr-3"></i> Falar com um Consultor Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video & Features Section -->
+        <section class="light-bg">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl lg:text-5xl font-black text-white mb-4">Veja o <span class="highlight-red">NOVO Eclipse Cross 2026</span> em Ação</h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto">Sinta a emoção e conheça a tecnologia que torna este SUV incomparável.</p>
+                </div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/f_diM5PWi3s?rel=0&modestbranding=1&showinfo=0" title="Mitsubishi Eclipse Cross 2026 - Test Drive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section class="dark-bg">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl lg:text-5xl font-black text-white mb-4">Por que Escolher o <span class="highlight-red">Eclipse Cross?</span></h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto">Uma combinação perfeita de design, performance e segurança para a sua paz de espírito.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass-effect rounded-xl p-8 text-center feature-card">
+                        <div class="w-16 h-16 highlight-red-bg rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-road text-white text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-white mb-4">Tração 4x4 Inteligente</h3>
+                        <p class="text-text-secondary">Sistema S-AWC com 3 modos de condução para máxima aderência em qualquer terreno.</p>
+                    </div>
+                    <div class="glass-effect rounded-xl p-8 text-center feature-card">
+                        <div class="w-16 h-16 highlight-red-bg rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-tachometer-alt text-white text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-white mb-4">Motor MIVEC Turbo 165cv</h3>
+                        <p class="text-text-secondary">Potência de 165cv e torque de 25,5 kgfm com tecnologia japonesa de ponta.</p>
+                    </div>
+                    <div class="glass-effect rounded-xl p-8 text-center feature-card">
+                        <div class="w-16 h-16 highlight-red-bg rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-tv text-white text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-white mb-4">Multimídia 10,25"</h3>
+                        <p class="text-text-secondary">Central multimídia touchscreen com Android Auto e Apple CarPlay sem fio.</p>
+                    </div>
+                    <div class="glass-effect rounded-xl p-8 text-center feature-card">
+                        <div class="w-16 h-16 highlight-red-bg rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-sync-alt text-white text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-white mb-4">Menor Raio de Giro</h3>
+                        <p class="text-text-secondary">Apenas 5,3m de raio de giro para manobras fáceis na cidade e estacionamentos.</p>
+                    </div>
+                    <div class="glass-effect rounded-xl p-8 text-center feature-card">
+                        <div class="w-16 h-16 highlight-red-bg rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-shield-alt text-white text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-white mb-4">Segurança Ativa</h3>
+                        <p class="text-text-secondary">7 airbags, HSA, ASC, ATC e sistemas avançados de assistência ao motorista.</p>
+                    </div>
+                    <div class="glass-effect rounded-xl p-8 text-center feature-card">
+                        <div class="w-16 h-16 highlight-red-bg rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-cogs text-white text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-white mb-4">CVT 8 Velocidades</h3>
+                        <p class="text-text-secondary">Transmissão CVT com 8 velocidades simuladas para dirigibilidade esportiva.</p>
+                    </div>
+                    <div class="glass-effect rounded-xl p-8 text-center feature-card">
+                        <div class="w-16 h-16 highlight-red-bg rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-mobile-alt text-white text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-white mb-4">Conectividade Total</h3>
+                        <p class="text-text-secondary">Infotainment com Android Auto e Apple CarPlay em uma tela intuitiva de 8”.</p>
+                    </div>
+                </div>
+            </div>
+        section>
+
+        <!-- Testimonials Section -->
+        <section class="light-bg">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl lg:text-5xl font-black text-white mb-4">O Que Nossos <span class="highlight-red">Clientes Dizem</span></h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass-effect rounded-xl p-8">
+                        <div class="flex text-yellow-400 text-lg mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-text-primary italic mb-6">"Simplesmente o melhor SUV que já tive. O consumo na estrada é ótimo e o conforto para a família é incomparável. Atendimento na Salvador Car foi nota 10."</p>
+                        <h4 class="text-white font-bold">Carlos Silva</h4>
+                        <span class="text-sm text-text-secondary">Proprietário de um Eclipse Cross HPE-S</span>
+                    </div>
+                    <div class="glass-effect rounded-xl p-8">
+                        <div class="flex text-yellow-400 text-lg mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-text-primary italic mb-6">"A tecnologia me surpreendeu. O Head-Up Display é fantástico e o sistema de som tem uma qualidade incrível. Me sinto muito segura dirigindo."</p>
+                        <h4 class="text-white font-bold">Mariana Costa</h4>
+                        <span class="text-sm text-text-secondary">Salvador, BA</span>
+                    </div>
+                    <div class="glass-effect rounded-xl p-8">
+                        <div class="flex text-yellow-400 text-lg mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-text-primary italic mb-6">"Usei meu carro antigo na troca e a avaliação foi muito justa. O processo todo foi transparente e rápido. Recomendo a concessionária a todos."</p>
+                        <h4 class="text-white font-bold">João Oliveira</h4>
+                        <span class="text-sm text-text-secondary">Cliente Satisfeito</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Float Button -->
+        <div class="whatsapp-float">
+            <a href="https://wa.me/5571999999999?text=Olá! Tenho interesse no NOVO Mitsubishi Eclipse Cross 2026. Gostaria de mais informações." target="_blank" class="whatsapp-btn" aria-label="Conversar no WhatsApp">
+                <i class="fab fa-whatsapp text-white text-3xl"></i>
+            </a>
+        </div>
+    </main>
+    
+     <!-- Footer -->
+    <footer class="dark-bg border-t border-glass-border pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <img src="logo_webp_comprar-salvador-car_f135245f55.png.webp" alt="Salvador Car" class="h-12 w-auto mx-auto mb-6">
+            <p class="text-text-secondary max-w-lg mx-auto mb-8">Sua concessionária Mitsubishi de confiança em Salvador. Experiência e condições que você merece.</p>
+             <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-text-secondary hover:text-white transition-colors"><i class="fab fa-facebook-f text-2xl"></i></a>
+                <a href="#" class="text-text-secondary hover:text-white transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="https://wa.me/5571999999999" target="_blank" class="text-text-secondary hover:text-white transition-colors"><i class="fab fa-whatsapp text-2xl"></i></a>
+            </div>
+            <p class="text-text-muted text-sm">© 2025 Salvador Car. Todos os direitos reservados. As imagens dos veículos são meramente ilustrativas.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Page Loader
+            const loader = document.getElementById('pageLoader');
+            window.addEventListener('load', () => {
+                setTimeout(() => loader.classList.add('hidden'), 500);
+            });
+
+            // Progress Bar & Fixed Nav
+            const progressBar = document.getElementById('progressBar');
+            const fixedNav = document.getElementById('fixedNav');
+            window.addEventListener('scroll', () => {
+                // Progress Bar
+                const scrollTop = window.pageYOffset;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                progressBar.style.width = (scrollTop / docHeight) * 100 + '%';
+                // Fixed Nav Visibility
+                fixedNav.classList.toggle('visible', window.scrollY > 200);
+            });
+
+            // Phone number formatting
+            const phoneInput = document.getElementById('phone');
+            phoneInput.addEventListener('input', (e) => {
+                let value = e.target.value.replace(/\D/g, '');
+                value = value.substring(0, 11); // Limit to 11 digits
+                if (value.length > 10) {
+                    e.target.value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+                } else if (value.length > 6) {
+                    e.target.value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+                } else if (value.length > 2) {
+                    e.target.value = value.replace(/(\d{2})(\d*)/, '($1) $2');
+                } else {
+                    e.target.value = value.replace(/(\d*)/, '($1');
+                }
+            });
+
+            // Form Submission Logic
+            const leadForm = document.getElementById('leadForm');
+            const formContainer = document.getElementById('form-container');
+            const successMessage = document.getElementById('success-message');
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btn-text');
+            const btnLoader = document.getElementById('btn-loader');
+
+            leadForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                
+                // Show loading state on button
+                btnText.style.display = 'none';
+                btnLoader.style.display = 'block';
+                submitBtn.disabled = true;
+
+                const formData = new FormData(leadForm);
+                const name = formData.get('name');
+                const interest = formData.get('interest');
+                
+                const whatsappMessage = `🚗 *NOVO LEAD | ECLIPSE CROSS 2026*\n\n` +
+                    `*Nome:* ${formData.get('name')}\n` +
+                    `*E-mail:* ${formData.get('email')}\n` +
+                    `*WhatsApp:* ${formData.get('phone')}\n` +
+                    `*Interesse:* ${interest}\n\n` +
+                    `---\n*Mensagem gerada pela Landing Page*`;
+                
+                const whatsappUrl = `https://wa.me/5571999999999?text=${encodeURIComponent(whatsappMessage)}`;
+                
+                // Simulate API call delay
+                setTimeout(() => {
+                    // Update success message
+                    document.getElementById('success-name').textContent = name.split(' ')[0]; // Show first name
+                    document.getElementById('whatsapp-redirect-btn').href = whatsappUrl;
+                    
+                    // Hide form and show success message
+                    formContainer.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    successMessage.classList.add('animate-fade-in');
+                    
+                }, 1000); // 1-second delay
+            });
+
+             // Intersection Observer for animations
+            const animatedElements = document.querySelectorAll('.animate-fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationDelay = entry.target.dataset.delay || '0s';
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
