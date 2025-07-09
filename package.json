@@ -1,0 +1,33 @@
+{
+  "name": "salvador-car-landing",
+  "version": "1.0.0",
+  "description": "Landing page para Salvador Car - Concessionária Mitsubishi",
+  "main": "index-short.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Build completed - static files ready for deployment'",
+    "start": "python -m http.server 8000",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "landing-page",
+    "mitsubishi",
+    "eclipse-cross",
+    "salvador",
+    "concessionaria",
+    "carros"
+  ],
+  "author": "Salvador Car",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salvadorcar/landing-page.git"
+  },
+  "homepage": "https://salvador-car.vercel.app"
+}
