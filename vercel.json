@@ -1,31 +1,17 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "index-short.html",
-      "use": "@vercel/static"
+      "source": "/",
+      "destination": "/index-short.html"
     },
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index-short.html"
+      "source": "/eclipse-1",
+      "destination": "/index-short.html"
     },
     {
-      "src": "/eclipse-1",
-      "dest": "/index-short.html"
-    },
-    {
-      "src": "/eclipse-2",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/eclipse-2",
+      "destination": "/index.html"
     }
   ],
   "headers": [
