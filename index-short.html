@@ -259,10 +259,131 @@
             transform: translateY(-5px);
         }
         
-        /* Efeitos de parallax */
-        .parallax-element {
-            transform: translateZ(0);
-            will-change: transform;
+
+        
+        /* Classes de espaçamento e organização */
+        .section-spacing {
+            padding: 5rem 0;
+        }
+        
+        .section-spacing-large {
+            padding: 8rem 0;
+        }
+        
+        .container-improved {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .content-spacing {
+            margin-bottom: 3rem;
+        }
+        
+        .grid-improved {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            opacity: 0.9;
+        }
+        
+        .card-spacing {
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .form-spacing .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .testimonial-spacing {
+            padding: 4rem 0;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .section-spacing {
+                padding: 3rem 0;
+            }
+            
+            .section-spacing-large {
+                padding: 4rem 0;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .benefit-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .parallax-bg {
+                background-attachment: scroll;
+            }
         }
         
         /* Classes de utilidade */
@@ -573,17 +694,32 @@
     </div>
     <!-- Header -->
     <header class="bg-white shadow-sm fixed w-full top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-center items-center">
-            <div class="flex items-center space-x-2">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo - Hidden on mobile -->
+            <div class="hidden md:flex items-center space-x-2">
                 <img src="logo_webp_comprar-salvador-car_f135245f55.png.webp" alt="Salvador Car" class="h-10">
+            </div>
+            
+            <!-- Mobile CTA Button -->
+            <div class="md:hidden w-full flex justify-center">
+                <a href="#lead-form" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2 rounded-full font-bold text-sm transition-all duration-300 transform hover:scale-105">
+                    QUERO MINHA PROPOSTA
+                </a>
+            </div>
+            
+            <!-- Desktop CTA Button -->
+            <div class="hidden md:block">
+                <a href="#lead-form" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-3 rounded-full font-bold text-sm transition-all duration-300 transform hover:scale-105">
+                    QUERO MINHA PROPOSTA
+                </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('8197.png');"></div>
+    <section class="section-spacing-large relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+        <!-- Background Image with Parallax -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('8197.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;"></div>
         
         <!-- Partículas Animadas -->
         <div class="particles">
@@ -603,7 +739,7 @@
         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
         
         <!-- Content -->
-        <div class="relative z-10 container mx-auto px-4 grid lg:grid-cols-2 gap-8 items-center">
+        <div class="relative z-10 container-improved grid lg:grid-cols-2 gap-8 items-center">
             <!-- Left Column - Main Content -->
             <div class="text-white space-y-6">
                 <!-- Badge Aprimorado -->
@@ -622,7 +758,7 @@
                 </p>
                 
                 <!-- Key Benefits Aprimorados -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 fade-in-delay-3">
+                <div class="grid-improved grid-cols-2 md:grid-cols-4 fade-in-delay-3">
                     <div class="glass-card enhanced-hover text-center group relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div class="relative z-10">
@@ -666,7 +802,7 @@
                 </div>
                 
                 <!-- CTA Buttons Aprimorados -->
-                <div class="flex flex-col sm:flex-row gap-6 pt-8 fade-in-delay-3">
+                <div class="button-group pt-8 fade-in-delay-3">
                     <a href="#lead-form" class="btn-enhanced bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-red-500/50 relative overflow-hidden group text-center">
                         <span class="relative z-10">QUERO MINHA PROPOSTA</span>
                         <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
@@ -679,7 +815,7 @@
             </div>
             
             <!-- Right Column - Lead Form Aprimorado -->
-            <div id="lead-form" class="glass-card enhanced-hover rounded-3xl p-10 shadow-2xl border-2 border-white/30 relative overflow-hidden">
+            <div id="lead-form" class="form-container glass-card enhanced-hover rounded-3xl p-10 shadow-2xl border-2 border-white/30 relative overflow-hidden">
                 <!-- Efeito de brilho de fundo -->
                 <div class="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-blue-500/10 opacity-50"></div>
                 
@@ -711,7 +847,7 @@
                         </li>
                     </ul>
                     
-                    <form class="space-y-6">
+                    <form class="form-spacing space-y-6">
                         <div class="form-group">
                             <input type="text" placeholder="Seu nome completo" class="w-full p-5 border-2 border-gray-300 rounded-xl focus:ring-4 focus:ring-red-500/50 focus:border-red-500 transition-all duration-300 bg-white/80 backdrop-blur-sm hover:bg-white transform hover:scale-[1.02]" required>
                         </div>
@@ -739,9 +875,9 @@
     </section>
 
     <!-- Quick Benefits Section -->
-    <section class="py-20 relative overflow-hidden">
+    <section class="section-spacing relative overflow-hidden">
         <!-- Background Image -->
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('8198.png');"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('8198.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;"></div>
         <!-- Overlay para legibilidade -->
         <div class="absolute inset-0 bg-gradient-to-br from-white/85 via-white/90 to-gray-100/85"></div>
         <!-- Partículas de fundo -->
@@ -754,8 +890,8 @@
             </div>
         </div>
         
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-16 animate-on-scroll">
+        <div class="container-improved relative z-10">
+            <div class="content-spacing text-center animate-on-scroll">
                 <div class="inline-block bg-gradient-to-r from-red-500/20 to-red-600/20 backdrop-blur-sm border border-red-300/30 text-red-700 px-6 py-2 rounded-full text-sm font-bold mb-6 uppercase tracking-wide">
                     ✦ Diferenciais Exclusivos ✦
                 </div>
@@ -763,7 +899,7 @@
                 <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">Tecnologia de ponta, segurança incomparável e economia inteligente em um só veículo premium</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+            <div class="benefit-grid md:grid-cols-3">
                 <div class="benefit-card glass-card enhanced-hover text-center p-8 rounded-2xl border border-white/50 shadow-xl hover:shadow-2xl transition-all duration-500 group relative overflow-hidden">
                     <!-- Efeito de brilho no hover -->
                     <div class="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-red-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -847,10 +983,117 @@
         </div>
     </section>
 
+    <!-- Video Section -->
+    <section class="section-spacing bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0">
+            <div class="absolute top-10 left-10 w-32 h-32 bg-red-500/10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-10 right-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-gradient-to-r from-red-500/5 to-gray-500/5 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container-improved relative z-10">
+            <!-- Header da seção -->
+            <div class="content-spacing text-center animate-on-scroll">
+                <div class="inline-block bg-gradient-to-r from-red-500/20 to-red-600/20 backdrop-blur-sm border border-red-300/30 text-red-400 px-6 py-2 rounded-full text-sm font-bold mb-6 uppercase tracking-wide">
+                    ✦ Veja em Ação ✦
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black mb-6 bg-gradient-to-r from-white via-red-400 to-white bg-clip-text text-transparent" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Conheça o Eclipse Cross</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.6);">Assista ao vídeo e descubra todos os detalhes que fazem do Eclipse Cross o SUV perfeito para sua família</p>
+            </div>
+            
+            <!-- Container do vídeo -->
+            <div class="video-container animate-on-scroll">
+                <div class="glass-card enhanced-hover rounded-3xl border border-white/20 shadow-2xl overflow-hidden group relative">
+                    <!-- Efeito de brilho -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <!-- Video responsive container -->
+                    <div class="relative aspect-video bg-black/50 backdrop-blur-sm">
+                        <iframe 
+                            src="https://www.youtube.com/embed/f_diM5PWi3s?rel=0&modestbranding=1&showinfo=0" 
+                            title="Mitsubishi Eclipse Cross - Vídeo Oficial"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen
+                            class="absolute inset-0 w-full h-full rounded-2xl"
+                            loading="lazy">
+                        </iframe>
+                        
+                        <!-- Overlay de carregamento -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-gray-800/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                            <div class="text-white text-center">
+                                <div class="w-16 h-16 border-4 border-white/30 border-t-white rounded-full animate-spin mx-auto mb-4"></div>
+                                <p class="text-sm font-semibold">Carregando vídeo...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Informações do vídeo -->
+                    <div class="p-8 bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-sm">
+                        <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+                            <div class="text-center md:text-left">
+                                <h3 class="text-2xl font-bold text-white mb-2" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Eclipse Cross em Detalhes</h3>
+                                <p class="text-gray-300" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.6);">Veja todas as características e tecnologias que fazem a diferença</p>
+                            </div>
+                            
+                            <!-- Botões de ação -->
+                            <div class="button-group">
+                                <a href="#lead-form" class="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-red-500/50 transform hover:scale-105 text-center">
+                                    Quero Test-Drive
+                                </a>
+                                <a href="https://wa.me/5571999999999?text=Olá! Vi o vídeo do Eclipse Cross e gostaria de mais informações." target="_blank" class="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-green-500/50 transform hover:scale-105 text-center">
+                                    Falar no WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Estatísticas do vídeo -->
+                        <div class="mt-6 pt-6 border-t border-white/10">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                <div class="group">
+                                    <div class="text-2xl font-bold text-red-400 mb-1 group-hover:scale-110 transition-transform duration-300">HD</div>
+                                    <div class="text-xs text-gray-400 uppercase tracking-wide">Qualidade</div>
+                                </div>
+                                <div class="group">
+                                    <div class="text-2xl font-bold text-blue-400 mb-1 group-hover:scale-110 transition-transform duration-300">5min</div>
+                                    <div class="text-xs text-gray-400 uppercase tracking-wide">Duração</div>
+                                </div>
+                                <div class="group">
+                                    <div class="text-2xl font-bold text-green-400 mb-1 group-hover:scale-110 transition-transform duration-300">2025</div>
+                                    <div class="text-xs text-gray-400 uppercase tracking-wide">Modelo</div>
+                                </div>
+                                <div class="group">
+                                    <div class="text-2xl font-bold text-purple-400 mb-1 group-hover:scale-110 transition-transform duration-300">SUV</div>
+                                    <div class="text-xs text-gray-400 uppercase tracking-wide">Categoria</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call to action adicional -->
+                <div class="text-center mt-12 animate-on-scroll">
+                    <p class="text-gray-400 mb-6">Gostou do que viu? Venha conhecer pessoalmente!</p>
+                    <div class="button-group">
+                        <a href="#lead-form" class="inline-block bg-gradient-to-r from-red-600 via-red-700 to-red-600 hover:from-red-500 hover:via-red-600 hover:to-red-500 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 shadow-2xl hover:shadow-red-500/50 transform hover:scale-105 relative overflow-hidden group">
+                            <span class="relative z-10">Agendar Test-Drive</span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                        </a>
+                        <a href="tel:+5571930258844" class="inline-block bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 hover:from-blue-500 hover:via-blue-600 hover:to-blue-500 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 shadow-2xl hover:shadow-blue-500/50 transform hover:scale-105 relative overflow-hidden group">
+                            <span class="relative z-10">Ligar Agora</span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section class="py-20 text-white relative overflow-hidden">
+    <section class="section-spacing text-white relative overflow-hidden">
         <!-- Background Image -->
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('8197.png');"></div>
+        <div class="absolute inset-0 parallax-bg" style="background-image: url('8197.png');"></div>
         <!-- Overlay escuro para contraste -->
         <div class="absolute inset-0 bg-gradient-to-br from-black/90 via-black/85 to-black/90"></div>
         <!-- Efeitos de fundo -->
@@ -860,8 +1103,8 @@
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-gradient-to-r from-red-500/5 to-gray-500/5 rounded-full blur-3xl"></div>
         </div>
         
-        <div class="container mx-auto px-4 text-center relative z-10">
-            <div class="mb-16 animate-on-scroll">
+        <div class="container-improved text-center relative z-10">
+            <div class="content-spacing animate-on-scroll">
                 <div class="inline-block bg-gradient-to-r from-red-500/20 to-red-600/20 backdrop-blur-sm border border-red-300/30 text-red-400 px-6 py-2 rounded-full text-sm font-bold mb-6 uppercase tracking-wide">
                     ✦ Venha nos Conhecer ✦
                 </div>
@@ -962,15 +1205,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-12 relative overflow-hidden">
+    <footer class="bg-black text-white section-spacing relative overflow-hidden">
         <!-- Efeitos de fundo minimalistas -->
         <div class="absolute inset-0">
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-r from-red-500/5 to-gray-500/5 rounded-full blur-3xl"></div>
         </div>
         
-        <div class="container mx-auto px-4 relative z-10">
+        <div class="container-improved relative z-10">
             <!-- Seção principal do footer -->
-            <div class="text-center mb-8">
+            <div class="text-center content-spacing">
                 <!-- Logo e descrição -->
                 <div class="mb-6">
                     <div class="flex justify-center items-center space-x-3 mb-4">
@@ -1017,12 +1260,7 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/5571999999999" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 z-50">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-        </svg>
-    </a>
+
 
     <script>
          // Smooth scrolling for anchor links
@@ -1058,16 +1296,7 @@
              observer.observe(el);
          });
 
-         // Efeito parallax suave
-         window.addEventListener('scroll', () => {
-             const scrolled = window.pageYOffset;
-             const parallaxElements = document.querySelectorAll('.parallax-element');
-             
-             parallaxElements.forEach(element => {
-                 const speed = element.dataset.speed || 0.5;
-                 element.style.transform = `translateY(${scrolled * speed}px)`;
-             });
-         });
+
 
          // Animação das partículas
          function createParticles() {

@@ -330,43 +330,130 @@
             outline-offset: 2px;
         }
         
-        /* Enhanced WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            z-index: 1000;
-            animation: bounce 2s infinite;
+        /* Improved spacing and organization */
+        .section-spacing {
+            padding: 5rem 0;
         }
         
-        .whatsapp-btn {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, #25d366, #128c7e);
-            border-radius: 50%;
+        .section-spacing-large {
+            padding: 8rem 0;
+        }
+        
+        .container-improved {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .content-spacing {
+            margin-bottom: 3rem;
+        }
+        
+        .grid-improved {
+            gap: 3rem;
+        }
+        
+        .card-spacing {
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Better visual hierarchy */
+        .section-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: #e5e7eb;
+        }
+        
+        /* Enhanced form styling */
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .form-spacing {
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Better button spacing */
+        .button-group {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .button-group button {
+            flex: 1;
+            min-height: 60px;
+        }
+        
+        /* Improved benefit cards */
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .benefit-card-improved {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
             transition: all 0.3s ease;
-            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        .whatsapp-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        .benefit-card-improved:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
         
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
+        /* Enhanced testimonials */
+        .testimonial-spacing {
+            padding: 4rem 0;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Better video section */
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 0;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         
         /* Tooltip */
@@ -560,15 +647,7 @@
                 scroll-behavior: auto;
             }
             
-            .whatsapp-float {
-                bottom: 16px;
-                right: 16px;
-            }
-            
-            .whatsapp-btn {
-                width: 56px;
-                height: 56px;
-            }
+            /* Mobile optimizations */
         }
         
         /* Performance optimizations */
@@ -622,7 +701,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen relative overflow-hidden">
+    <section class="min-h-screen relative overflow-hidden section-spacing-large">
         <!-- Background Image -->
         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hero-gradient" style="background-image: url('bgcar.webp'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
         </div>
@@ -642,10 +721,10 @@
         </header>
 
         <!-- Hero Content -->
-        <div class="relative z-10 max-w-7xl mx-auto px-6 pt-16 pb-24">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
+        <div class="relative z-10 container-improved pt-16 pb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 grid-improved items-center min-h-[80vh]">
                 <!-- Left Side - Content -->
-                <div class="space-y-10 lg:pr-8">
+                <div class="space-y-10 lg:pr-8 content-spacing">
                     <div class="space-y-10">
                         <div class="glass-effect inline-block px-8 py-4 rounded-full shadow-xl backdrop-blur-lg">
                             <span class="text-yellow-400 font-bold text-base lg:text-lg">
@@ -720,7 +799,7 @@
                     </div>
 
                     <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-8 mt-10">
+                    <div class="button-group flex-col sm:flex-row">
                         <button onclick="scrollToForm()" class="btn-primary pulse-red will-change-transform tooltip flex-1" aria-label="Agendar test-drive gratuito">
                             <i class="fas fa-car mr-3"></i>
                             AGENDAR TEST-DRIVE GRÁTIS
@@ -735,7 +814,7 @@
                 </div>
 
                 <!-- Right Side - Lead Form -->
-                <div id="contact-form" class="glass-effect rounded-2xl p-8 lg:p-10 border-2 border-red-500 shadow-2xl backdrop-blur-lg">
+                <div id="contact-form" class="glass-effect rounded-2xl card-spacing border-2 border-red-500 shadow-2xl backdrop-blur-lg form-container">
                     <div class="text-center mb-8">
                         <div class="w-20 h-20 mitsubishi-red-bg rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i class="fas fa-gift text-white text-3xl"></i>
@@ -797,16 +876,16 @@
     </section>
 
     <!-- Why Choose Section -->
-    <section class="py-20 bg-black bg-opacity-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-white mb-4">
+    <section class="section-spacing bg-black bg-opacity-50">
+        <div class="container-improved">
+            <div class="text-center content-spacing">
+                <h2 class="section-title text-white">
                     POR QUE O <span class="mitsubishi-red">ECLIPSE CROSS</span> É A ESCOLHA CERTA?
                 </h2>
-                <p class="text-xl text-gray-300">Mais do que um SUV, é a garantia de tranquilidade para sua família</p>
+                <p class="section-subtitle">Mais do que um SUV, é a garantia de tranquilidade para sua família</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="benefit-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 <!-- Benefit 1 -->
                 <div class="glass-effect rounded-xl p-6 text-center floating-animation benefit-card will-change-transform" role="article" aria-labelledby="benefit1-title">
                     <div class="w-16 h-16 mitsubishi-red-bg rounded-full flex items-center justify-center mx-auto mb-4">
@@ -855,23 +934,23 @@
     </section>
 
     <!-- Video Section -->
-    <section class="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" id="video">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+    <section class="section-spacing bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" id="video">
+        <div class="container-improved">
+            <div class="text-center content-spacing">
+                <h2 class="section-title text-white">
                     Conheça o <span class="mitsubishi-red">Eclipse Cross</span> em Ação
                 </h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                <p class="section-subtitle max-w-3xl mx-auto">
                     Veja todos os detalhes, tecnologias e performance do SUV que está revolucionando o mercado
                 </p>
             </div>
             
-            <div class="max-w-4xl mx-auto">
-                <div class="glass-effect rounded-2xl p-8 shadow-2xl">
-                    <div class="relative aspect-video rounded-xl overflow-hidden shadow-lg">
+            <div class="video-container">
+                <div class="glass-effect rounded-2xl card-spacing shadow-2xl">
+                    <div class="video-wrapper">
                         <iframe 
                             class="w-full h-full" 
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1&showinfo=0" 
+                            src="https://www.youtube.com/embed/f_diM5PWi3s?rel=0&modestbranding=1&showinfo=0" 
                             title="Mitsubishi Eclipse Cross - Apresentação Completa" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -917,18 +996,18 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-white mb-4">
+    <section class="testimonial-spacing">
+        <div class="container-improved">
+            <div class="text-center content-spacing">
+                <h2 class="section-title text-white">
                     DEPOIMENTOS DE QUEM JÁ <span class="mitsubishi-red">ESCOLHEU</span>
                 </h2>
-                <p class="text-xl text-gray-300">Veja o que nossos clientes falam sobre o Eclipse Cross</p>
+                <p class="section-subtitle">Veja o que nossos clientes falam sobre o Eclipse Cross</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 grid-improved">
                 <!-- Testimonial 1 -->
-                <div class="glass-effect rounded-xl p-8 will-change-transform" role="article" aria-labelledby="testimonial1-name">
+                <div class="testimonial-card will-change-transform" role="article" aria-labelledby="testimonial1-name">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center mr-4">
                             <i class="fas fa-user text-white" aria-hidden="true"></i>
@@ -978,16 +1057,16 @@
     </section>
 
     <!-- Detailed Features Section -->
-    <section class="py-20 bg-black bg-opacity-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-white mb-4">
+    <section class="section-spacing bg-black bg-opacity-50">
+        <div class="container-improved">
+            <div class="content-spacing text-center">
+                <h2 class="section-title">
                     TECNOLOGIA E <span class="mitsubishi-red">PERFORMANCE</span> SUPERIORES
                 </h2>
-                <p class="text-xl text-gray-300">Cada detalhe pensado para sua comodidade e segurança</p>
+                <p class="section-subtitle">Cada detalhe pensado para sua comodidade e segurança</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="grid-improved grid-cols-1 lg:grid-cols-2">
                 <!-- Performance -->
                 <div class="space-y-6">
                     <h3 class="text-2xl font-bold text-white mb-6">
@@ -1042,22 +1121,22 @@
     </section>
 
     <!-- Offers Section -->
-    <section id="offers" class="py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
+    <section id="offers" class="section-spacing">
+        <div class="container-improved">
+            <div class="content-spacing text-center">
                 <div class="urgency-banner inline-block px-6 py-2 rounded-full mb-4">
                     <span class="text-white font-bold">
                         <i class="fas fa-clock mr-2"></i>
                         OFERTA VÁLIDA POR TEMPO LIMITADO!
                     </span>
                 </div>
-                <h2 class="text-4xl font-black text-white mb-4">
+                <h2 class="section-title">
                     CONDIÇÕES <span class="mitsubishi-red">ESPECIAIS</span> ECLIPSE CROSS
                 </h2>
-                <p class="text-xl text-gray-300">Aproveite as melhores condições do ano para sair dirigindo hoje mesmo</p>
+                <p class="section-subtitle">Aproveite as melhores condições do ano para sair dirigindo hoje mesmo</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="grid-improved grid-cols-1 lg:grid-cols-3">
                 <!-- Offer 1 -->
                 <div class="glass-effect rounded-xl p-8 border-2 border-transparent hover:border-red-500 transition-colors">
                     <div class="text-center mb-6">
@@ -1181,12 +1260,12 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section class="py-20 bg-black bg-opacity-70">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-black text-white mb-6">
+    <section class="section-spacing bg-black bg-opacity-70">
+        <div class="container-improved text-center">
+            <h2 class="section-title">
                 NÃO PERCA A CHANCE DE TRANSFORMAR SUA <span class="mitsubishi-red">ROTINA</span>
             </h2>
-            <p class="text-xl text-gray-300 mb-8">
+            <p class="section-subtitle">
                 O SUV que é referência em inovação, conforto e segurança está esperando por você.
                 <span class="text-white font-bold">Vagas limitadas para test-drive!</span>
             </p>
@@ -1225,9 +1304,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 bg-black">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center">
+    <footer class="section-spacing bg-black">
+        <div class="container-improved">
+            <div class="content-spacing text-center">
                 <!-- Logo and Brand -->
                 <div class="flex items-center justify-center space-x-4 mb-6">
                     <img src="logo_webp_comprar-salvador-car_f135245f55.png.webp" alt="Salvador Car Logo" class="w-12 h-12 object-contain">
@@ -1272,16 +1351,7 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
-    <div class="whatsapp-float">
-        <a href="https://wa.me/5571999999999?text=Olá! Tenho interesse no Eclipse Cross. Gostaria de mais informações." 
-           target="_blank" 
-           class="whatsapp-btn tooltip"
-           aria-label="Falar no WhatsApp">
-            <i class="fab fa-whatsapp text-2xl text-white"></i>
-            <span class="tooltiptext">Fale conosco no WhatsApp!</span>
-        </a>
-    </div>
+
 
     <script>
         // Page loader
