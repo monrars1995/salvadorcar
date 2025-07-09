@@ -23,11 +23,11 @@
     "vercel": "^32.0.0"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": "22.x"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/salvadorcar/landing-page.git"
+    "url": "https://github.com/monrars1995/salvadorcar.git"
   },
   "homepage": "https://salvador-car.vercel.app"
 }
