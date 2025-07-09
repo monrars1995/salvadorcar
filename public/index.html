@@ -3,60 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitsubishi Eclipse Cross 2024 - O SUV que Sua Família Merece | Salvador Car</title>
-    <meta name="description" content="Descubra o SUV que une design, tecnologia e segurança para sua família. Eclipse Cross 2024 com 10 anos de garantia. Agende seu test-drive GRÁTIS!">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Mitsubishi Eclipse Cross 2025 - Salvador Car</title>
+    <meta name="description" content="Mitsubishi Eclipse Cross 2025 com motor 1.5 Turbo, 7 airbags e garantia de 5 anos. Financiamento facilitado na Salvador Car.">
+    <meta name="keywords" content="Mitsubishi Eclipse Cross, SUV, 2025, Salvador Car, financiamento, motor turbo">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://salvadorcar.com.br/">
+    <meta property="og:title" content="Mitsubishi Eclipse Cross 2025 - Salvador Car">
+    <meta property="og:description" content="Mitsubishi Eclipse Cross 2025 com motor 1.5 Turbo, 7 airbags e garantia de 5 anos. Financiamento facilitado na Salvador Car.">
+    <meta property="og:image" content="https://salvadorcar.com.br/8197.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://salvadorcar.com.br/">
+    <meta property="twitter:title" content="Mitsubishi Eclipse Cross 2025 - Salvador Car">
+    <meta property="twitter:description" content="Mitsubishi Eclipse Cross 2025 com motor 1.5 Turbo, 7 airbags e garantia de 5 anos. Financiamento facilitado na Salvador Car.">
+    <meta property="twitter:image" content="https://salvadorcar.com.br/8197.png">
+    
+    <link rel="canonical" href="https://salvadorcar.com.br/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <style>
-        /* Core Variables */
-        :root {
-            --mitsubishi-red: #E60012;
-            --mitsubishi-red-dark: #B8000E;
-            --glass-bg: rgba(0, 0, 0, 0.4);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --text-primary: #ffffff;
-            --text-secondary: #d1d5db;
-            --text-muted: rgba(255, 255, 255, 0.6);
+        body {
+            font-family: 'Inter', sans-serif;
         }
         
-        /* Smooth scrolling for entire page */
-        html {
-            scroll-behavior: smooth;
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
         
-        /* Loading animation */
-        .page-loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2a2a2a 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            opacity: 1;
-            transition: opacity 0.5s ease;
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('bgcar.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
         
-        .page-loader.hidden {
-            opacity: 0;
-            pointer-events: none;
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        .loader-content {
-            text-align: center;
+        .hover-scale {
+            transition: transform 0.3s ease;
         }
         
-        .loader-spinner {
-            width: 50px;
-            height: 50px;
-            border: 3px solid rgba(230, 0, 18, 0.3);
-            border-top: 3px solid var(--mitsubishi-red);
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+            50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8); }
+        }
+        
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #1d4ed8, #1e40af);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(45deg, #10b981, #059669);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: linear-gradient(45deg, #059669, #047857);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+        }
+        
+        .feature-icon {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .price-highlight {
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+            height: 2px;
+        }
+        
+        .form-input {
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.1);
+        }
+        
+        .sticky-header {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        .loading-spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3b82f6;
             border-radius: 50%;
+            width: 20px;
+            height: 20px;
             animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
         }
         
         @keyframes spin {
@@ -64,720 +180,297 @@
             100% { transform: rotate(360deg); }
         }
         
-        /* Fixed Navigation */
-        .fixed-nav {
-            position: fixed;
+        .success-message {
+            background: linear-gradient(45deg, #10b981, #059669);
+            color: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            display: none;
+        }
+        
+        .error-message {
+            background: linear-gradient(45deg, #ef4444, #dc2626);
+            color: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            display: none;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+        
+        .video-container iframe {
+            position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            z-index: 1000;
-            transform: translateY(-100%);
-            transition: transform 0.3s ease;
-            padding: 12px 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
         }
         
-        .fixed-nav.visible {
-            transform: translateY(0);
-        }
-        
-        .nav-content {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .nav-logo {
-            height: 32px;
-            width: auto;
-        }
-        
-        .nav-cta {
-            background: var(--mitsubishi-red);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 14px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-cta:hover {
-            background: var(--mitsubishi-red-dark);
-            transform: translateY(-1px);
-        }
-        
-        /* Progress Indicator */
-        .progress-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
-            background: var(--mitsubishi-red);
-            z-index: 1001;
-            transition: width 0.3s ease;
-            box-shadow: 0 0 10px rgba(230, 0, 18, 0.5);
-        }
-        
-        /* Enhanced Styles */
-        .mitsubishi-red { color: var(--mitsubishi-red); }
-        .mitsubishi-red-bg { background-color: var(--mitsubishi-red); }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2a2a2a 100%);
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(230,0,18,0.3) 100%);
-        }
-        
-        .glass-effect {
-            background: var(--glass-bg);
-            backdrop-filter: blur(15px);
-            border: 1px solid var(--glass-border);
-            transition: all 0.3s ease;
-        }
-        
-        .glass-effect:hover {
-            background: rgba(0, 0, 0, 0.5);
-            border-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-        }
-        
-        /* Enhanced Animations */
-        .floating-animation {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-        
-        .pulse-red {
-            animation: pulse-red 2s infinite;
-        }
-        
-        @keyframes pulse-red {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(230, 0, 18, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(230, 0, 18, 0); }
-        }
-        
-        .animate-fade-in {
-            animation: fadeIn 1s ease-out forwards;
-            opacity: 0;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Enhanced Form Styles */
-        .form-input {
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            color: white;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .form-input:focus {
-            background: rgba(255, 255, 255, 0.15);
-            border-color: var(--mitsubishi-red);
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(230, 0, 18, 0.1);
-            transform: translateY(-1px);
-        }
-        
-        .form-input:valid {
-            border-color: #10b981;
-        }
-        
-        .form-input::placeholder {
-            color: var(--text-muted);
-        }
-        
-        .form-group {
-            position: relative;
-        }
-        
-        .form-label {
-            position: absolute;
-            top: -8px;
-            left: 12px;
-            background: var(--glass-bg);
-            padding: 0 8px;
-            font-size: 12px;
-            color: var(--mitsubishi-red);
-            font-weight: 600;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: all 0.3s ease;
-        }
-        
-        .form-input:focus + .form-label,
-        .form-input:valid + .form-label {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        /* Enhanced Buttons */
-        .btn-primary {
-            background: var(--mitsubishi-red);
-            color: white;
-            border: none;
-            padding: 16px 32px;
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .btn-primary:hover {
-            background: var(--mitsubishi-red-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(230, 0, 18, 0.3);
-        }
-        
-        .btn-primary:active {
-            transform: translateY(0);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 14px 30px;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: var(--mitsubishi-red);
-            transform: translateY(-2px);
-        }
-        
-        /* Enhanced Cards */
-        .benefit-card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
-        }
-        
-        .benefit-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-        
-        /* Urgency Elements */
-        .urgency-banner {
-            background: linear-gradient(45deg, var(--mitsubishi-red), #ff4444);
-            animation: urgency-pulse 3s ease-in-out infinite;
-        }
-        
-        @keyframes urgency-pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
-        }
-        
-        .countdown {
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-            background: linear-gradient(45deg, var(--mitsubishi-red), #ff6b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-size: 1.5rem;
-        }
-        
-        /* Accessibility Improvements */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-        
-        /* Focus indicators */
-        button:focus,
-        a:focus,
-        input:focus,
-        select:focus {
-            outline: 2px solid var(--mitsubishi-red);
-            outline-offset: 2px;
-        }
-        
-        /* Enhanced WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            z-index: 1000;
-            animation: bounce 2s infinite;
-        }
-        
-        .whatsapp-btn {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, #25d366, #128c7e);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        
-        .whatsapp-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-        
-        /* Tooltip */
-        .tooltip {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 200px;
-            background-color: rgba(0, 0, 0, 0.9);
-            color: white;
-            text-align: center;
-            border-radius: 6px;
-            padding: 8px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -100px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            font-size: 14px;
-        }
-        
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
-        }
-        
-        /* Responsive Improvements - Mobile Optimized */
         @media (max-width: 768px) {
-            /* Header mobile */
-            header .max-w-7xl {
-                flex-direction: column !important;
-                gap: 1rem;
-                padding: 1rem !important;
-            }
-            
-            header .hidden.md\:flex {
-                display: flex !important;
-                flex-direction: column;
-                gap: 0.5rem;
-                text-align: center;
-            }
-            
-            header .hidden.md\:flex span {
-                font-size: 0.875rem !important;
-            }
-            
-            /* Hero section mobile */
-            .min-h-screen {
-                min-height: auto !important;
-                padding-top: 2rem;
-            }
-            
-            .grid.grid-cols-1.lg\:grid-cols-2 {
-                grid-template-columns: 1fr !important;
-                gap: 2rem !important;
-            }
-            
-            .min-h-\[80vh\] {
-                min-height: auto !important;
-            }
-            
-            /* Typography mobile */
-            h1 {
-                font-size: 2rem !important;
-                line-height: 1.1 !important;
-                text-align: center;
-            }
-            
-            .text-xl.lg\:text-2xl {
-                font-size: 1rem !important;
-                text-align: center;
-                padding: 0 1rem;
-            }
-            
-            /* Glass effects mobile */
-            .glass-effect {
-                margin: 0 1rem !important;
-                padding: 1rem !important;
-            }
-            
-            /* Benefits grid mobile */
-            .grid.grid-cols-2 {
-                grid-template-columns: repeat(2, 1fr) !important;
-                gap: 1rem !important;
-            }
-            
-            .benefit-card {
-                padding: 1rem !important;
-            }
-            
-            .benefit-card .text-3xl {
-                font-size: 1.5rem !important;
-            }
-            
-            .benefit-card .text-sm {
-                font-size: 0.75rem !important;
-            }
-            
-            /* Spacing mobile */
-            .space-y-10 > * + * {
-                margin-top: 2rem !important;
-            }
-            
-            .pt-16 {
-                padding-top: 2rem !important;
-            }
-            
-            .pb-24 {
-                padding-bottom: 3rem !important;
-            }
-            
-            /* Container mobile */
-            .max-w-7xl {
-                padding-left: 1rem !important;
-                padding-right: 1rem !important;
-            }
-            
-            /* Background fixed para mobile */
-            .bg-fixed {
-                background-attachment: scroll !important;
-            }
-            
-            /* Touch targets */
-            button, a, input {
-                min-height: 44px !important;
-                min-width: 44px !important;
-            }
-            
-            /* Overflow control */
-            body {
-                overflow-x: hidden !important;
-            }
-        }
-        
-        /* Extra small screens */
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.75rem !important;
-            }
-            
-            .text-xl.lg\:text-2xl {
-                font-size: 0.9rem !important;
-            }
-            
-            .grid.grid-cols-2 {
-                grid-template-columns: 1fr !important;
-                gap: 1rem !important;
-            }
-            
-            .glass-effect {
-                padding: 0.75rem !important;
-                margin: 0 0.5rem !important;
-            }
-            
-            .benefit-card .text-3xl {
-                font-size: 1.25rem !important;
-            }
-        }
-        
-        /* Performance Optimizations */
-        .will-change-transform {
-            will-change: transform;
-        }
-        
-        /* Optimize animations for better performance */
-        .benefit-card {
-            transform: translateZ(0);
-            backface-visibility: hidden;
-        }
-        
-        /* Smooth scrolling for all elements */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Reduce motion for accessibility */
-        @media (prefers-reduced-motion: reduce) {
-            .floating-animation,
-            .benefit-card,
-            .urgency-banner {
-                animation: none;
-                transition: none;
-            }
-            
-            html {
-                scroll-behavior: auto;
-            }
-            
-            .whatsapp-float {
-                bottom: 16px;
-                right: 16px;
-            }
-            
-            .whatsapp-btn {
-                width: 56px;
-                height: 56px;
-            }
-        }
-        
-        /* Performance optimizations */
-        .will-change-transform {
-            will-change: transform;
-        }
-        
-        .will-change-opacity {
-            will-change: opacity;
-        }
-        
-        /* Dark mode support */
-        @media (prefers-color-scheme: dark) {
-            .glass-effect {
-                background: rgba(0, 0, 0, 0.6);
-            }
-        }
-        
-        /* Reduced motion support */
-        @media (prefers-reduced-motion: reduce) {
-            .floating-animation,
-            .pulse-red,
-            .urgency-banner {
-                animation: none;
-            }
-            
-            .benefit-card:hover {
-                transform: none;
+            .hero-bg {
+                background-attachment: scroll;
             }
         }
     </style>
 </head>
-<body class="gradient-bg text-white" style="background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
-    <!-- Page Loader -->
-    <div class="page-loader" id="pageLoader">
-        <div class="loader-content">
-            <div class="loader-spinner"></div>
-            <p class="text-white text-lg font-semibold">Carregando...</p>
-        </div>
-    </div>
-    
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar" style="width: 0%"></div>
-    
-    <!-- Fixed Navigation -->
-    <nav class="fixed-nav" id="fixedNav">
-        <div class="nav-content">
-            <img src="https://logoeps.com/wp-content/uploads/2013/03/mitsubishi-vector-logo.png" alt="Mitsubishi" class="nav-logo">
-            <a href="#contact-form" class="nav-cta">Solicitar Proposta</a>
-        </div>
-    </nav>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 sticky-header">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <img src="logo_webp_comprar-salvador-car_f135245f55.png.webp" alt="Salvador Car Logo" class="h-12 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Salvador Car</h1>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">Início</a>
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 transition-colors">Características</a>
+                    <a href="#video" class="text-gray-700 hover:text-blue-600 transition-colors">Vídeo</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-colors">Depoimentos</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contato</a>
+                    <a href="tel:+5571999999999" class="btn-primary text-white px-4 py-2 rounded-lg font-semibold">
+                        <i class="fas fa-phone mr-2"></i>Ligar Agora
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-50 md:hidden">
+                <div class="flex justify-between items-center p-4 border-b">
+                    <img src="logo_webp_comprar-salvador-car_f135245f55.png.webp" alt="Salvador Car Logo" class="h-10 w-auto">
+                    <button id="mobile-menu-close" class="text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="p-4 space-y-4">
+                    <a href="#home" class="block text-gray-700 hover:text-blue-600 transition-colors py-2">Início</a>
+                    <a href="#features" class="block text-gray-700 hover:text-blue-600 transition-colors py-2">Características</a>
+                    <a href="#video" class="block text-gray-700 hover:text-blue-600 transition-colors py-2">Vídeo</a>
+                    <a href="#testimonials" class="block text-gray-700 hover:text-blue-600 transition-colors py-2">Depoimentos</a>
+                    <a href="#contact" class="block text-gray-700 hover:text-blue-600 transition-colors py-2">Contato</a>
+                    <a href="tel:+5571999999999" class="btn-primary text-white px-4 py-3 rounded-lg font-semibold block text-center mt-4">
+                        <i class="fas fa-phone mr-2"></i>Ligar Agora
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="min-h-screen relative overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hero-gradient" style="background-image: url('bgcar.webp'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
-        </div>
-        
-        <!-- Overlay Layer -->
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        
-        <!-- Header -->
-        <header class="relative z-10 p-6">
-            <div class="max-w-7xl mx-auto flex items-center justify-center">
-                <div class="flex items-center space-x-4">
-                    <div>
-                        <img src="logo_webp_comprar-salvador-car_f135245f55.png.webp" alt="Salvador Car" class="h-12 w-auto">
+    <section id="home" class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="container mx-auto px-4 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white" data-aos="fade-right">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 text-shadow leading-tight">
+                        Mitsubishi <span class="text-yellow-400">Eclipse Cross</span> 2025
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-200 leading-relaxed">
+                        O SUV que combina <strong>design arrojado</strong>, <strong>tecnologia avançada</strong> e <strong>performance excepcional</strong>. 
+                        Sua nova aventura começa aqui.
+                    </p>
+                    
+                    <!-- Main Benefits -->
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="glass-effect p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-trophy text-yellow-400 text-2xl mr-3"></i>
+                                <span class="font-semibold">Motor 1.5 Turbo</span>
+                            </div>
+                            <p class="text-sm text-gray-300">165 cv de potência</p>
+                        </div>
+                        <div class="glass-effect p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-heart text-red-400 text-2xl mr-3"></i>
+                                <span class="font-semibold">Economia</span>
+                            </div>
+                            <p class="text-sm text-gray-300">Até 14,2 km/l</p>
+                        </div>
+                        <div class="glass-effect p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-car text-blue-400 text-2xl mr-3"></i>
+                                <span class="font-semibold">7 Airbags</span>
+                            </div>
+                            <p class="text-sm text-gray-300">Segurança máxima</p>
+                        </div>
+                        <div class="glass-effect p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-percent text-green-400 text-2xl mr-3"></i>
+                                <span class="font-semibold">Garantia</span>
+                            </div>
+                            <p class="text-sm text-gray-300">5 anos de fábrica</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover-scale pulse-glow">
+                            <i class="fas fa-car mr-2"></i>Agendar Test Drive
+                        </a>
+                        <a href="https://wa.me/5571999999999?text=Olá! Tenho interesse no Mitsubishi Eclipse Cross 2025. Gostaria de mais informações." 
+                           target="_blank" class="btn-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover-scale">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative" data-aos="fade-left">
+                    <div class="floating">
+                        <img src="8197.png" alt="Mitsubishi Eclipse Cross 2025" class="w-full h-auto rounded-2xl shadow-2xl">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 glass-effect p-6 rounded-xl">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-yellow-400 price-highlight">A partir de</div>
+                            <div class="text-2xl font-bold text-white">R$ 159.990</div>
+                            <div class="text-sm text-gray-300">Condições especiais</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
 
-        <!-- Hero Content -->
-        <div class="relative z-10 max-w-7xl mx-auto px-6 pt-16 pb-24">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
-                <!-- Left Side - Content -->
-                <div class="space-y-10 lg:pr-8">
-                    <div class="space-y-10">
-                        <div class="glass-effect inline-block px-8 py-4 rounded-full shadow-xl backdrop-blur-lg">
-                            <span class="text-yellow-400 font-bold text-base lg:text-lg">
-                                <i class="fas fa-star mr-3"></i>
-                                SUV #1 EM SEGURANÇA E TECNOLOGIA
-                            </span>
-                        </div>
-                        
-                        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight drop-shadow-2xl">
-                            <span class="text-white animate-fade-in">DESCUBRA O SUV </span>
-                            <span class="mitsubishi-red animate-fade-in" style="animation-delay: 0.2s;">QUE SUA FAMÍLIA </span>
-                            <span class="text-white animate-fade-in" style="animation-delay: 0.4s;">MERECE</span>
-                        </h1>
-                        
-                        <p class="text-xl lg:text-2xl text-gray-200 max-w-3xl leading-relaxed font-medium">
-                            O <span class="mitsubishi-red font-bold">Mitsubishi Eclipse Cross</span> foi projetado para quem busca mais do que um simples SUV. 
-                            <span class="text-white font-semibold">Design marcante, tecnologia de ponta e segurança completa</span> 
-                            para sua tranquilidade em todas as viagens.
-                        </p>
-                    </div>
-
-                    <!-- Key Benefits -->
-                    <div class="grid grid-cols-2 gap-8 mt-12">
-                        <div class="glass-effect rounded-xl p-6 text-center benefit-card will-change-transform shadow-lg" role="article" aria-label="Potência do motor">
-                            <div class="text-3xl font-bold mitsubishi-red mb-1">152 CV</div>
-                            <div class="text-sm text-gray-300 font-medium">Motor Turbo 1.5L</div>
-                        </div>
-                        <div class="glass-effect rounded-xl p-6 text-center benefit-card will-change-transform shadow-lg" role="article" aria-label="Economia de combustível">
-                            <div class="text-3xl font-bold mitsubishi-red mb-1">12 km/L</div>
-                            <div class="text-sm text-gray-300 font-medium">Economia Real</div>
-                        </div>
-                        <div class="glass-effect rounded-xl p-6 text-center benefit-card will-change-transform shadow-lg" role="article" aria-label="Sistema de segurança">
-                            <div class="text-3xl font-bold mitsubishi-red mb-1">7</div>
-                            <div class="text-sm text-gray-300 font-medium">Airbags</div>
-                        </div>
-                        <div class="glass-effect rounded-xl p-6 text-center benefit-card will-change-transform shadow-lg" role="article" aria-label="Garantia do veículo">
-                            <div class="text-3xl font-bold mitsubishi-red mb-1">10 ANOS</div>
-                            <div class="text-sm text-gray-300 font-medium">Garantia</div>
-                        </div>
-                    </div>
-
-                    <!-- Social Proof -->
-                    <div class="glass-effect rounded-xl p-8 shadow-xl backdrop-blur-lg">
-                        <div class="flex items-center justify-between flex-wrap gap-4">
-                            <div class="flex items-center space-x-3">
-                                <div class="flex text-yellow-400 text-lg">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <span class="text-white font-bold text-lg">4.9/5</span>
-                            </div>
-                            <div class="text-gray-300 text-sm font-medium">
-                                <i class="fas fa-users mr-2"></i>
-                                +2.847 famílias satisfeitas
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-8 mt-10">
-                        <button onclick="scrollToForm()" class="btn-primary pulse-red will-change-transform tooltip flex-1" aria-label="Agendar test-drive gratuito">
-                            <i class="fas fa-calendar-alt mr-3"></i>
-                            AGENDAR TEST-DRIVE GRÁTIS
-                            <span class="tooltiptext">Agende agora e teste o Eclipse Cross sem compromisso!</span>
-                        </button>
-                        <button onclick="scrollToOffers()" class="btn-secondary will-change-transform tooltip flex-1" aria-label="Ver condições especiais">
-                            <i class="fas fa-tag mr-3"></i>
-                            VER CONDIÇÕES ESPECIAIS
-                            <span class="tooltiptext">Confira nossas ofertas exclusivas e condições de financiamento</span>
-                        </button>
-                    </div>
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Fale Conosco</h2>
+                    <p class="text-xl text-gray-600">Entre em contato e garante já o seu Eclipse Cross 2025</p>
+                    <div class="section-divider w-24 mx-auto mt-6"></div>
                 </div>
-
-                <!-- Right Side - Lead Form -->
-                <div id="contact-form" class="glass-effect rounded-2xl p-8 lg:p-10 border-2 border-red-500 shadow-2xl backdrop-blur-lg">
-                    <div class="text-center mb-8">
-                        <div class="w-20 h-20 mitsubishi-red-bg rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                            <i class="fas fa-gift text-white text-3xl"></i>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div data-aos="fade-right">
+                        <div class="bg-white p-8 rounded-2xl shadow-xl">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6">Solicite uma Proposta</h3>
+                            <form id="contact-form" class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nome Completo</label>
+                                    <input type="text" id="name" name="name" required 
+                                           class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">E-mail</label>
+                                    <input type="email" id="email" name="email" required 
+                                           class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Telefone/WhatsApp</label>
+                                    <input type="tel" id="phone" name="phone" required 
+                                           class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="interest" class="block text-sm font-medium text-gray-700 mb-2">Interesse</label>
+                                    <select id="interest" name="interest" required 
+                                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="compra">Compra à vista</option>
+                                        <option value="financiamento">Financiamento</option>
+                                        <option value="test-drive">Test Drive</option>
+                                        <option value="informacoes">Mais informações</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Mensagem (opcional)</label>
+                                    <textarea id="message" name="message" rows="4" 
+                                              class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary w-full text-white py-4 rounded-lg font-semibold text-lg hover-scale">
+                                    <span id="submit-text">Enviar Mensagem</span>
+                                    <div id="loading-spinner" class="loading-spinner mx-auto" style="display: none;"></div>
+                                </button>
+                            </form>
+                            <div id="success-message" class="success-message">
+                                <i class="fas fa-check-circle mr-2"></i>Mensagem enviada com sucesso! Entraremos em contato em breve.
+                            </div>
+                            <div id="error-message" class="error-message">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>Erro ao enviar mensagem. Tente novamente ou entre em contato por telefone.
+                            </div>
                         </div>
-                        <h3 class="text-2xl lg:text-3xl font-bold text-white mb-4">
-                            RECEBA UMA PROPOSTA EXCLUSIVA
-                        </h3>
-                        <p class="text-gray-300 text-lg mb-4">Preencha seus dados e ganhe:</p>
-                        <ul class="text-left text-sm lg:text-base text-gray-300 space-y-2 bg-black bg-opacity-30 rounded-lg p-4">
-                            <li class="flex items-center"><i class="fas fa-check mitsubishi-red mr-3 text-lg"></i>Test-drive gratuito</li>
-                            <li class="flex items-center"><i class="fas fa-check mitsubishi-red mr-3 text-lg"></i>Avaliação do seu usado</li>
-
-                            <li class="flex items-center"><i class="fas fa-check mitsubishi-red mr-3 text-lg"></i>Atendimento VIP</li>
-                        </ul>
                     </div>
-
-                    <form id="leadForm" class="space-y-6">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Seu nome completo" 
-                                   class="w-full px-5 py-4 rounded-xl form-input will-change-transform text-lg" required>
-                            <label for="name" class="form-label">Nome Completo</label>
+                    
+                    <div data-aos="fade-left">
+                        <div class="space-y-8">
+                            <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-phone text-blue-600 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Telefone</h4>
+                                        <p class="text-gray-600">(71) 99999-9999</p>
+                                    </div>
+                                </div>
+                                <a href="tel:+5571999999999" class="text-blue-600 hover:text-blue-800 font-medium">
+                                    Ligar agora <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-green-100 p-3 rounded-full mr-4">
+                                        <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">WhatsApp</h4>
+                                        <p class="text-gray-600">(71) 99999-9999</p>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5571999999999?text=Olá! Tenho interesse no Mitsubishi Eclipse Cross 2025. Gostaria de mais informações." 
+                                   target="_blank" class="text-green-600 hover:text-green-800 font-medium">
+                                    Conversar no WhatsApp <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-red-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-envelope text-red-600 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">E-mail</h4>
+                                        <p class="text-gray-600">contato@salvadorcar.com.br</p>
+                                    </div>
+                                </div>
+                                <a href="mailto:contato@salvadorcar.com.br" class="text-red-600 hover:text-red-800 font-medium">
+                                    Enviar e-mail <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-map-marker-alt text-purple-600 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Endereço</h4>
+                                        <p class="text-gray-600">Salvador, Bahia</p>
+                                    </div>
+                                </div>
+                                <p class="text-purple-600 font-medium">
+                                    Atendemos toda a região metropolitana
+                                </p>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" 
-                                   class="w-full px-5 py-4 rounded-xl form-input will-change-transform text-lg" required>
-                            <label for="email" class="form-label">E-mail</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Seu WhatsApp (com DDD)" 
-                                   class="w-full px-5 py-4 rounded-xl form-input will-change-transform text-lg" required>
-                            <label for="phone" class="form-label">WhatsApp</label>
-                        </div>
-                        <div class="form-group">
-                            <select id="interest" name="interest" class="w-full px-5 py-4 rounded-xl form-input will-change-transform text-lg" required>
-                                <option value="">Como podemos ajudar você?</option>
-                                <option value="test-drive">Quero agendar um test-drive</option>
-                                <option value="proposta">Quero receber uma proposta</option>
-                                <option value="financiamento">Quero simular financiamento</option>
-                                <option value="troca">Quero avaliar meu usado</option>
-                            </select>
-                            <label for="interest" class="form-label">Interesse</label>
-                        </div>
-                        <button type="submit" class="w-full btn-primary will-change-transform text-lg py-5 rounded-xl shadow-lg">
-                            <i class="fas fa-rocket mr-3"></i>
-                            AGENDAR TESTE DRIVE
-                            <span class="sr-only">Clique para agendar seu test-drive gratuito</span>
-                        </button>
-                    </form>
-
-                    <div class="text-center mt-6">
-                        <p class="text-sm text-gray-400 bg-black bg-opacity-30 rounded-lg p-3">
-                            <i class="fas fa-shield-alt mr-2 text-green-400"></i>
-                            Seus dados estão 100% seguros • Resposta em até 2 horas
-                        </p>
                     </div>
                 </div>
             </div>
@@ -785,181 +478,253 @@
     </section>
 
     <!-- Why Choose Section -->
-    <section class="py-20 bg-black bg-opacity-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-white mb-4">
-                    POR QUE O <span class="mitsubishi-red">ECLIPSE CROSS</span> É A ESCOLHA CERTA?
-                </h2>
-                <p class="text-xl text-gray-300">Mais do que um SUV, é a garantia de tranquilidade para sua família</p>
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Por que escolher o Eclipse Cross?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Um SUV completo que oferece tudo o que você precisa para suas aventuras urbanas e viagens em família
+                </p>
+                <div class="section-divider w-24 mx-auto mt-6"></div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Benefit 1 -->
-                <div class="glass-effect rounded-xl p-6 text-center floating-animation benefit-card will-change-transform" role="article" aria-labelledby="benefit1-title">
-                    <div class="w-16 h-16 mitsubishi-red-bg rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shield-alt text-white text-2xl" aria-hidden="true"></i>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-engine feature-icon text-2xl"></i>
                     </div>
-                    <h3 id="benefit1-title" class="text-lg font-bold text-white mb-3">Segurança Máxima</h3>
-                    <p class="text-gray-300 text-sm">
-                        7 airbags, frenagem autônoma de emergência e estrutura reforçada para proteger quem você ama.
-                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Motor Turbo</h3>
+                    <p class="text-gray-600">Motor 1.5 MIVEC Turbo com 165 cv de potência e 25,5 kgfm de torque para performance superior</p>
                 </div>
-
-                <!-- Benefit 2 -->
-                <div class="glass-effect rounded-xl p-6 text-center floating-animation benefit-card will-change-transform" style="animation-delay: -1s;" role="article" aria-labelledby="benefit2-title">
-                    <div class="w-16 h-16 mitsubishi-red-bg rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-palette text-white text-2xl" aria-hidden="true"></i>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-leaf feature-icon text-2xl"></i>
                     </div>
-                    <h3 id="benefit2-title" class="text-lg font-bold text-white mb-3">Design Impressionante</h3>
-                    <p class="text-gray-300 text-sm">
-                        Linhas dinâmicas, duplo teto solar panorâmico e iluminação full LED que chamam atenção.
-                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Economia</h3>
+                    <p class="text-gray-600">Consumo eficiente de até 14,2 km/l na estrada, ideal para o dia a dia e viagens longas</p>
                 </div>
-
-                <!-- Benefit 3 -->
-                <div class="glass-effect rounded-xl p-6 text-center floating-animation benefit-card will-change-transform" style="animation-delay: -2s;" role="article" aria-labelledby="benefit3-title">
-                    <div class="w-16 h-16 mitsubishi-red-bg rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-microchip text-white text-2xl"></i>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt feature-icon text-2xl"></i>
                     </div>
-                    <h3 id="benefit3-title" class="text-lg font-bold text-white mb-3">Tecnologia de Ponta</h3>
-                    <p class="text-gray-300 text-sm">
-                        Central multimídia 8", Android Auto, Apple CarPlay e câmera 360° para total comodidade.
-                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Segurança</h3>
+                    <p class="text-gray-600">7 airbags, controle de estabilidade e assistente de partida em rampa para máxima proteção</p>
                 </div>
-
-                <!-- Benefit 4 -->
-                <div class="glass-effect rounded-xl p-6 text-center floating-animation benefit-card will-change-transform" style="animation-delay: -3s;" role="article" aria-labelledby="benefit4-title">
-                    <div class="w-16 h-16 mitsubishi-red-bg rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-road text-white text-2xl" aria-hidden="true"></i>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cog feature-icon text-2xl"></i>
                     </div>
-                    <h3 id="benefit4-title" class="text-lg font-bold text-white mb-3">Versatilidade Total</h3>
-                    <p class="text-gray-300 text-sm">
-                        Tração S-AWC, 4 modos de condução e porta-malas de 405L para todas as aventuras.
-                    </p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Tecnologia</h3>
+                    <p class="text-gray-600">Central multimídia com Android Auto e Apple CarPlay, câmera de ré e sensores de estacionamento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4">Conheça o Eclipse Cross em Detalhes</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Veja todas as características, tecnologias e diferenciais que fazem do Eclipse Cross o SUV ideal para você
+                </p>
+                <div class="section-divider w-24 mx-auto mt-6"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Mitsubishi Eclipse Cross 2025 - Apresentação Completa"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <h3 class="text-3xl font-bold mb-6">Experiência Completa</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-600 p-3 rounded-full flex-shrink-0">
+                                <i class="fas fa-play text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Test Drive Virtual</h4>
+                                <p class="text-gray-300">Conheça todos os detalhes do interior, exterior e performance do Eclipse Cross através do nosso vídeo exclusivo.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-green-600 p-3 rounded-full flex-shrink-0">
+                                <i class="fas fa-microchip text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Tecnologias Avançadas</h4>
+                                <p class="text-gray-300">Descubra como a tecnologia Mitsubishi torna cada viagem mais segura, confortável e conectada.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-yellow-600 p-3 rounded-full flex-shrink-0">
+                                <i class="fas fa-tachometer-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Performance e Economia</h4>
+                                <p class="text-gray-300">Veja como o motor 1.5 Turbo combina potência e eficiência para oferecer a melhor experiência de condução.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="#contact" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover-scale inline-block">
+                            <i class="fas fa-calendar-alt mr-2"></i>Agendar Test Drive Presencial
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-white mb-4">
-                    DEPOIMENTOS DE QUEM JÁ <span class="mitsubishi-red">ESCOLHEU</span>
-                </h2>
-                <p class="text-xl text-gray-300">Veja o que nossos clientes falam sobre o Eclipse Cross</p>
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">O que nossos clientes dizem</h2>
+                <p class="text-xl text-gray-600">Depoimentos reais de quem já escolheu a Salvador Car</p>
+                <div class="section-divider w-24 mx-auto mt-6"></div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="glass-effect rounded-xl p-8 will-change-transform" role="article" aria-labelledby="testimonial1-name">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-white" aria-hidden="true"></i>
-                        </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card p-8 rounded-xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" 
+                             alt="Cliente" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 id="testimonial1-name" class="text-white font-bold">Ana Paula</h4>
-                            <div class="flex text-yellow-400" role="img" aria-label="5 estrelas">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
+                            <h4 class="font-semibold text-gray-800">Carlos Silva</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <blockquote class="text-gray-300 italic">
-                        "O Eclipse Cross superou minhas expectativas em conforto e segurança. 
-                        <span class="text-white font-semibold">Ideal para minha família!</span> 
-                        A tecnologia é incrível e me sinto muito segura dirigindo."
-                    </blockquote>
+                    <p class="text-gray-600 italic">"Excelente atendimento e o Eclipse Cross superou todas as minhas expectativas. Economia de combustível incrível e muito conforto para a família."</p>
                 </div>
-
-                <!-- Testimonial 2 -->
-                <div class="glass-effect rounded-xl p-8 will-change-transform" role="article" aria-labelledby="testimonial2-name">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-white" aria-hidden="true"></i>
-                        </div>
+                
+                <div class="testimonial-card p-8 rounded-xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" 
+                             alt="Cliente" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 id="testimonial2-name" class="text-white font-bold">Ricardo Silva</h4>
-                            <div class="flex text-yellow-400" role="img" aria-label="5 estrelas">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
+                            <h4 class="font-semibold text-gray-800">Maria Santos</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <blockquote class="text-gray-300 italic">
-                        "<span class="text-white font-semibold">Tecnologia, espaço e dirigibilidade impecáveis.</span> 
-                        Recomendo para quem busca um SUV completo. O consumo é excelente e a garantia de 10 anos me deu total confiança."
-                    </blockquote>
+                    <p class="text-gray-600 italic">"A Salvador Car me ofereceu as melhores condições de financiamento. Estou muito satisfeita com meu Eclipse Cross, é perfeito para o dia a dia."</p>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" 
+                             alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">João Oliveira</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Processo de compra muito transparente e rápido. O carro é fantástico, tecnologia de ponta e muito seguro. Recomendo a Salvador Car!"</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Detailed Features Section -->
-    <section class="py-20 bg-black bg-opacity-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-white mb-4">
-                    TECNOLOGIA E <span class="mitsubishi-red">PERFORMANCE</span> SUPERIORES
-                </h2>
-                <p class="text-xl text-gray-300">Cada detalhe pensado para sua comodidade e segurança</p>
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Recursos em Detalhes</h2>
+                <p class="text-xl text-gray-600">Conheça todas as características que fazem do Eclipse Cross único</p>
+                <div class="section-divider w-24 mx-auto mt-6"></div>
             </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Performance -->
-                <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-white mb-6">
-                        <i class="fas fa-tachometer-alt mitsubishi-red mr-3"></i>
-                        Performance e Eficiência
-                    </h3>
-                    
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                <div data-aos="fade-right">
+                    <img src="8198.png" alt="Interior Eclipse Cross" class="w-full h-auto rounded-2xl shadow-xl">
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6">Interior Sofisticado</h3>
                     <div class="space-y-4">
-                        <div class="glass-effect rounded-lg p-4 will-change-transform" role="article">
-                            <h4 class="text-white font-bold mb-2">Motor Turbo 1.5L MIVEC</h4>
-                            <p class="text-gray-300 text-sm">152 cv de potência e 25,5 kgfm de torque para respostas rápidas e economia de combustível excepcional.</p>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Bancos em couro premium com ajuste elétrico</span>
                         </div>
-                        
-                        <div class="glass-effect rounded-lg p-4 will-change-transform" role="article">
-                            <h4 class="text-white font-bold mb-2">Transmissão CVT com Modo Esportivo</h4>
-                            <p class="text-gray-300 text-sm">Trocas suaves e dirigibilidade envolvente para máximo conforto e performance.</p>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Central multimídia touchscreen de 8 polegadas</span>
                         </div>
-                        
-                        <div class="glass-effect rounded-lg p-4 will-change-transform" role="article">
-                            <h4 class="text-white font-bold mb-2">Tração Super All-Wheel Control (S-AWC)</h4>
-                            <p class="text-gray-300 text-sm">4 modos de condução para segurança e estabilidade em qualquer terreno.</p>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Android Auto e Apple CarPlay</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Ar-condicionado digital dual zone</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Porta-copos refrigerado</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Safety & Tech -->
-                <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-white mb-6">
-                        <i class="fas fa-shield-alt mitsubishi-red mr-3"></i>
-                        Segurança Avançada
-                    </h3>
-                    
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right" class="lg:order-2">
+                    <img src="fl_progressive,f_webp.webp" alt="Exterior Eclipse Cross" class="w-full h-auto rounded-2xl shadow-xl">
+                </div>
+                <div data-aos="fade-left" class="lg:order-1">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6">Design Arrojado</h3>
                     <div class="space-y-4">
-                        <div class="glass-effect rounded-lg p-4 will-change-transform" role="article">
-                            <h4 class="text-white font-bold mb-2">Pacote Completo de Assistentes</h4>
-                            <p class="text-gray-300 text-sm">FCM, LDW, BSW e LCA para máxima proteção em todas as situações.</p>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Faróis Full LED com DRL</span>
                         </div>
-                        
-                        <div class="glass-effect rounded-lg p-4 will-change-transform" role="article">
-                            <h4 class="text-white font-bold mb-2">Câmera 360° e Sensores</h4>
-                            <p class="text-gray-300 text-sm">Manobras mais seguras e tranquilas com visão completa ao redor do veículo.</p>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Rodas de liga leve 18 polegadas</span>
                         </div>
-                        
-                        <div class="glass-effect rounded-lg p-4 will-change-transform" role="article">
-                            <h4 class="text-white font-bold mb-2">7 Airbags e Estrutura Reforçada</h4>
-                            <p class="text-gray-300 text-sm">Proteção máxima para todos os ocupantes em qualquer situação.</p>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Teto solar panorâmico</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Rack de teto integrado</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Acabamento cromado premium</span>
                         </div>
                     </div>
                 </div>
@@ -967,462 +732,305 @@
         </div>
     </section>
 
-    <!-- Offers Section -->
-    <section id="offers" class="py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <div class="urgency-banner inline-block px-6 py-2 rounded-full mb-4">
-                    <span class="text-white font-bold">
-                        <i class="fas fa-clock mr-2"></i>
-                        OFERTA VÁLIDA POR TEMPO LIMITADO!
-                    </span>
-                </div>
-                <h2 class="text-4xl font-black text-white mb-4">
-                    CONDIÇÕES <span class="mitsubishi-red">ESPECIAIS</span> ECLIPSE CROSS
-                </h2>
-                <p class="text-xl text-gray-300">Aproveite as melhores condições do ano para sair dirigindo hoje mesmo</p>
+    <!-- Special Offers Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4">Ofertas Especiais</h2>
+                <p class="text-xl text-blue-100">Condições exclusivas para você sair dirigindo hoje mesmo</p>
+                <div class="section-divider w-24 mx-auto mt-6"></div>
             </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- Offer 1 -->
-                <div class="glass-effect rounded-xl p-8 border-2 border-transparent hover:border-red-500 transition-colors">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-white mb-2">ECLIPSE CROSS RUSH</h3>
-                        <div class="text-sm text-gray-400 line-through mb-1">De R$ 179.990</div>
-                        <div class="text-4xl font-black mitsubishi-red mb-2">R$ 169.990</div>
-                        <p class="text-green-400 font-bold">Economia de R$ 10.000</p>
-                    </div>
-                    
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Motor 1.5L Turbo MIVEC 152cv
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Câmbio CVT Automático
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Central Multimídia 8" + CarPlay
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            7 Airbags + Assistentes de Segurança
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            10 anos de garantia no trem de força
-                        </li>
-                    </ul>
-                    
-                    <button onclick="scrollToForm()" class="w-full mitsubishi-red-bg text-white py-3 rounded-lg font-bold hover:bg-red-700 transition-colors">
-                        QUERO ESTA OFERTA
-                    </button>
-                </div>
-
-                <!-- Offer 2 - Featured -->
-                <div class="glass-effect rounded-xl p-8 border-2 border-red-500 relative transform scale-105">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <span class="mitsubishi-red-bg text-white px-4 py-2 rounded-full text-sm font-bold">
-                            MAIS PROCURADO
-                        </span>
-                    </div>
-                    
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-white mb-2">ECLIPSE CROSS HPE</h3>
-                        <div class="text-sm text-gray-400 line-through mb-1">De R$ 199.990</div>
-                        <div class="text-4xl font-black mitsubishi-red mb-2">R$ 189.990</div>
-                        <p class="text-green-400 font-bold">Economia de R$ 10.000</p>
-                    </div>
-                    
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Tudo da versão RUSH +
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Rodas de Liga Leve 18"
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Duplo Teto Solar Panorâmico
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Bancos em Couro Premium
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Sistema de Som Premium 8 Alto-falantes
-                        </li>
-                    </ul>
-                    
-                    <button onclick="scrollToForm()" class="w-full mitsubishi-red-bg text-white py-3 rounded-lg font-bold hover:bg-red-700 transition-colors pulse-red">
-                        QUERO ESTA OFERTA
-                    </button>
-                </div>
-
-                <!-- Offer 3 -->
-                <div class="glass-effect rounded-xl p-8 border-2 border-transparent hover:border-red-500 transition-colors">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-white mb-2">ECLIPSE CROSS HPE-S</h3>
-                        <div class="text-sm text-gray-400 line-through mb-1">De R$ 222.990</div>
-                        <div class="text-4xl font-black mitsubishi-red mb-2">R$ 212.990</div>
-                        <p class="text-green-400 font-bold">Economia de R$ 10.000</p>
-                    </div>
-                    
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Tudo da versão HPE +
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Tração Integral S-AWC
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Sistema de Navegação GPS
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Controle de Estabilidade Avançado
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <i class="fas fa-check mitsubishi-red mr-3"></i>
-                            Capacidade de Reboque 680kg
-                        </li>
-                    </ul>
-                    
-                    <button onclick="scrollToForm()" class="w-full mitsubishi-red-bg text-white py-3 rounded-lg font-bold hover:bg-red-700 transition-colors">
-                        QUERO ESTA OFERTA
-                    </button>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="py-20 bg-black bg-opacity-70">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-black text-white mb-6">
-                NÃO PERCA A CHANCE DE TRANSFORMAR SUA <span class="mitsubishi-red">ROTINA</span>
-            </h2>
-            <p class="text-xl text-gray-300 mb-8">
-                O SUV que é referência em inovação, conforto e segurança está esperando por você.
-                <span class="text-white font-bold">Vagas limitadas para test-drive!</span>
-            </p>
             
-            <div class="glass-effect rounded-xl p-8 mb-8">
-                <h3 class="text-2xl font-bold text-white mb-4">
-                    <i class="fas fa-clock mitsubishi-red mr-2"></i>
-                    ATENDIMENTO RÁPIDO E PERSONALIZADO
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-                    <div>
-                        <div class="text-2xl font-bold mitsubishi-red mb-1">2 HORAS</div>
-                        <p class="text-gray-300 text-sm">Resposta garantida</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-8 rounded-xl card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center">
+                        <i class="fas fa-percentage text-yellow-400 text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Taxa Zero</h3>
+                        <p class="text-blue-100 mb-6">Financiamento com taxa de juros especial para aprovação na hora</p>
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">0,99%</div>
+                        <div class="text-sm text-blue-200">ao mês</div>
                     </div>
-                    <div>
-                        <div class="text-2xl font-bold mitsubishi-red mb-1">24 HORAS</div>
-                        <p class="text-gray-300 text-sm">Para agendar test-drive</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-8 rounded-xl card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <i class="fas fa-gift text-yellow-400 text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Bônus Especial</h3>
+                        <p class="text-blue-100 mb-6">Ganhe acessórios premium e seguro grátis por 1 ano</p>
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">R$ 5.000</div>
+                        <div class="text-sm text-blue-200">em benefícios</div>
                     </div>
-                    <div>
-                        <div class="text-2xl font-bold mitsubishi-red mb-1">48 HORAS</div>
-                        <p class="text-gray-300 text-sm">Proposta personalizada</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-8 rounded-xl card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center">
+                        <i class="fas fa-clock text-yellow-400 text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Entrega Rápida</h3>
+                        <p class="text-blue-100 mb-6">Documentação expressa e entrega em até 48 horas</p>
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">48h</div>
+                        <div class="text-sm text-blue-200">para entregar</div>
                     </div>
                 </div>
             </div>
             
-            <button onclick="scrollToForm()" class="mitsubishi-red-bg text-white px-12 py-6 rounded-lg font-bold text-xl hover:bg-red-700 transition-colors pulse-red">
-                <i class="fas fa-rocket mr-3"></i>
-                AGENDAR TESTE DRIVE
-            </button>
-            
-            <p class="text-gray-400 text-sm mt-4">
-                <i class="fas fa-users mr-1"></i>
-                Mais de 50 famílias já garantiram seu Eclipse Cross este mês!
-            </p>
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="#contact" class="btn-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover-scale inline-block">
+                    <i class="fas fa-rocket mr-2"></i>Aproveitar Ofertas
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 bg-black">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center">
-                <!-- Logo and Brand -->
-                <div class="flex items-center justify-center space-x-4 mb-6">
-                    <img src="logo_webp_comprar-salvador-car_f135245f55.png.webp" alt="Salvador Car Logo" class="w-12 h-12 object-contain">
-                    <div>
-                        <h3 class="text-xl font-bold text-white">SALVADOR CAR</h3>
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="logo_webp_comprar-salvador-car_f135245f55.png.webp" alt="Salvador Car Logo" class="h-10 w-auto mr-3">
+                        <h3 class="text-xl font-bold">Salvador Car</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">Sua concessionária de confiança em Salvador. Oferecemos os melhores veículos com atendimento personalizado e condições especiais.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/5571999999999" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
                     </div>
                 </div>
                 
-                <!-- Brief Description -->
-                <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
-                    Sua concessionária Mitsubishi de confiança em Salvador. Oferecemos os melhores SUVs com tecnologia de ponta e atendimento personalizado.
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contato</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-blue-400"></i>
+                            <span class="text-gray-400">(71) 99999-9999</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                            <span class="text-gray-400">contato@salvadorcar.com.br</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-blue-400"></i>
+                            <span class="text-gray-400">Salvador, Bahia</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Serviços</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Venda de Veículos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Financiamento</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Test Drive</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Avaliação</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pós-venda</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Horário de Funcionamento</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <div>Segunda a Sexta: 8h às 18h</div>
+                        <div>Sábado: 8h às 16h</div>
+                        <div>Domingo: Fechado</div>
+                    </div>
+                    <div class="mt-6">
+                        <a href="tel:+5571999999999" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold inline-block hover-scale">
+                            <i class="fas fa-phone mr-2"></i>Ligar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Salvador Car. Todos os direitos reservados.
                 </p>
-                
-                <!-- Contact Links -->
-                <div class="flex justify-center space-x-6 mb-6">
-                    <a href="https://wa.me/5571999999999" class="text-gray-300 hover:text-white transition-colors">
-                        <i class="fab fa-whatsapp mitsubishi-red mr-2"></i>
-                        WhatsApp
-                    </a>
-                    <a href="tel:7133334444" class="text-gray-300 hover:text-white transition-colors">
-                        <i class="fas fa-phone mitsubishi-red mr-2"></i>
-                        Telefone
-                    </a>
-                    <a href="https://instagram.com/salvadorcar" target="_blank" class="text-gray-300 hover:text-white transition-colors">
-                        <i class="fab fa-instagram mitsubishi-red mr-2"></i>
-                        Instagram
-                    </a>
-                </div>
-                
-                <!-- Copyright -->
-                <div class="border-t border-gray-800 pt-6">
-                    <p class="text-gray-400 text-sm">
-                        © 2025 Salvador Car. Todos os direitos reservados.
-                    </p>
-                    <div class="mt-2 space-x-4 text-xs">
-                        <a href="#" class="text-gray-500 hover:text-gray-300">Política de Privacidade</a>
-                        <span class="text-gray-600">•</span>
-                        <a href="#" class="text-gray-500 hover:text-gray-300">Termos de Uso</a>
-                    </div>
-                </div>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
-    <div class="whatsapp-float">
-        <a href="https://wa.me/5571999999999?text=Olá! Tenho interesse no Eclipse Cross. Gostaria de mais informações." 
-           target="_blank" 
-           class="whatsapp-btn tooltip"
-           aria-label="Falar no WhatsApp">
-            <i class="fab fa-whatsapp text-2xl text-white"></i>
-            <span class="tooltiptext">Fale conosco no WhatsApp!</span>
-        </a>
-    </div>
-
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Page loader
-        window.addEventListener('load', function() {
-            const loader = document.getElementById('pageLoader');
-            setTimeout(() => {
-                loader.classList.add('hidden');
-            }, 1000);
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
         });
-        
-        // Progress bar
-        function updateProgressBar() {
-            const scrollTop = window.pageYOffset;
-            const docHeight = document.body.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            document.getElementById('progressBar').style.width = scrollPercent + '%';
-        }
-        
-        // Fixed navigation
-        function updateFixedNav() {
-            const fixedNav = document.getElementById('fixedNav');
-            const scrollTop = window.pageYOffset;
-            
-            if (scrollTop > 100) {
-                fixedNav.classList.add('visible');
-            } else {
-                fixedNav.classList.remove('visible');
-            }
-        }
-        
-        // Scroll event listener
-        window.addEventListener('scroll', function() {
-            updateProgressBar();
-            updateFixedNav();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
         });
-        
-        // Enhanced smooth scrolling
-        function scrollToForm() {
-            const element = document.querySelector('#leadForm');
-            if (element) {
-                element.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'center'
-                });
-                // Focus on first input for better UX
-                setTimeout(() => {
-                    element.querySelector('input').focus();
-                }, 500);
-            }
-        }
 
-        function scrollToOffers() {
-            const element = document.querySelector('#offers');
-            if (element) {
-                element.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        }
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
 
-        // Countdown timer
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const endTime = now + (48 * 60 * 60 * 1000); // 48 hours from now
-            
-            setInterval(function() {
-                const currentTime = new Date().getTime();
-                const timeLeft = endTime - currentTime;
-                
-                const hours = Math.floor(timeLeft / (1000 * 60 * 60));
-                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                
-                document.querySelector('.countdown').textContent = `${hours}h ${minutes}min`;
-                
-                if (timeLeft < 0) {
-                    document.querySelector('.countdown').textContent = "ÚLTIMAS HORAS";
-                }
-            }, 60000); // Update every minute
-        }
-        
-        updateCountdown();
+        // Close mobile menu when clicking on links
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
 
-        // Form submission with enhanced validation
-        document.getElementById('leadForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.innerHTML;
-            
-            // Show loading state
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>ENVIANDO...';
-            submitButton.disabled = true;
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Enhanced validation
-            if (!data.name || data.name.length < 2) {
-                alert('Por favor, informe seu nome completo.');
-                resetButton();
-                return;
-            }
-            
-            if (!data.email || !data.email.includes('@')) {
-                alert('Por favor, informe um e-mail válido.');
-                resetButton();
-                return;
-            }
-            
-            if (!data.phone || data.phone.replace(/\D/g, '').length < 10) {
-                alert('Por favor, informe um telefone válido com DDD.');
-                resetButton();
-                return;
-            }
-            
-            if (!data.interest) {
-                alert('Por favor, selecione como podemos ajudá-lo.');
-                resetButton();
-                return;
-            }
-
-            try {
-                // Simulate API call
-                await new Promise(resolve => setTimeout(resolve, 2000));
-                
-                // Success message
-                alert('🎉 SUCESSO! Seus dados foram enviados.\n\n✅ Nossa equipe entrará em contato em até 2 horas\n✅ Você receberá uma proposta personalizada\n✅ Test-drive será agendado conforme sua disponibilidade\n\nObrigado por escolher a Salvador Car!');
-                
-                this.reset();
-                
-                // Track conversion (Google Analytics, Facebook Pixel, etc.)
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'conversion', {
-                        'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
-                        'value': 1.0,
-                        'currency': 'BRL'
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
                     });
                 }
-                
-            } catch (error) {
-                console.error('Erro:', error);
-                alert('❌ Ops! Ocorreu um erro ao enviar seus dados.\n\nPor favor, tente novamente ou entre em contato diretamente:\n📞 (71) 3333-4444\n📱 WhatsApp: (71) 99999-9999');
-            }
-            
-            function resetButton() {
-                submitButton.innerHTML = originalText;
-                submitButton.disabled = false;
-            }
-            
-            resetButton();
+            });
         });
 
-        // Enhanced phone mask
-        document.getElementById('phone').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+        const submitText = document.getElementById('submit-text');
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
             
-            if (value.length <= 11) {
-                if (value.length === 11) {
-                    value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
-                } else if (value.length === 10) {
-                    value = value.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
-                } else if (value.length > 6) {
-                    value = value.replace(/(\d{2})(\d{4})(\d+)/, '($1) $2-$3');
-                } else if (value.length > 2) {
-                    value = value.replace(/(\d{2})(\d+)/, '($1) $2');
-                }
-                e.target.value = value;
+            // Show loading state
+            submitText.style.display = 'none';
+            loadingSpinner.style.display = 'block';
+            
+            // Hide previous messages
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                interest: formData.get('interest'),
+                message: formData.get('message')
+            };
+            
+            try {
+                // Simulate API call (replace with actual endpoint)
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                
+                // Show success message
+                successMessage.style.display = 'block';
+                contactForm.reset();
+                
+                // Send WhatsApp message
+                const whatsappMessage = `Olá! Meu nome é ${data.name}. Tenho interesse no Mitsubishi Eclipse Cross 2025.\n\nContato: ${data.phone}\nE-mail: ${data.email}\nInteresse: ${data.interest}\n\n${data.message ? 'Mensagem: ' + data.message : ''}`;
+                const whatsappUrl = `https://wa.me/5571999999999?text=${encodeURIComponent(whatsappMessage)}`;
+                
+                setTimeout(() => {
+                    window.open(whatsappUrl, '_blank');
+                }, 1000);
+                
+            } catch (error) {
+                // Show error message
+                errorMessage.style.display = 'block';
+            } finally {
+                // Reset button state
+                submitText.style.display = 'block';
+                loadingSpinner.style.display = 'none';
             }
         });
-        
-        // Name validation
-        document.getElementById('name').addEventListener('input', function(e) {
-            // Remove numbers and special characters
-            e.target.value = e.target.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '');
-        });
-        
-        // Email validation
-        document.getElementById('email').addEventListener('blur', function(e) {
-            const email = e.target.value;
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            
-            if (email && !emailRegex.test(email)) {
-                e.target.style.borderColor = '#E60012';
-                e.target.style.backgroundColor = 'rgba(230, 0, 18, 0.1)';
+
+        // Sticky header effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-lg');
             } else {
-                e.target.style.borderColor = '';
-                e.target.style.backgroundColor = '';
+                header.classList.remove('shadow-lg');
             }
         });
-        
-        // Scroll animations
+
+        // Phone number formatting
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length >= 11) {
+                value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+            } else if (value.length >= 7) {
+                value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+            } else if (value.length >= 3) {
+                value = value.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+            }
+            e.target.value = value;
+        });
+
+        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-        
-        const observer = new IntersectionObserver(function(entries) {
+
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.classList.add('animate-fade-in');
                 }
             });
         }, observerOptions);
-        
-        // Observe elements for animation
-        document.querySelectorAll('.benefit-card, .glass-effect').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
-</body>
-</html>
 
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Lazy loading for images
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+
+        // Performance optimization: Debounce scroll events
+        let ticking = false;
+        function updateScrollEffects() {
+            // Add scroll-based effects here
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(updateScrollEffects);
+                ticking = true;
+            }
+        });
+
+        // Preload critical images
+        const criticalImages = [
+            '8197.png',
+            '8198.png',
+            'bgcar.webp'
+        ];
